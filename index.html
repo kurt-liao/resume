@@ -8,12 +8,21 @@
 		<link rel="stylesheet" href="./src/assets/styles/index.css" />
 	</head>
 	<body>
-		<div id="app" x-data="locale">
-			<h1>Current language is <span x-text="lang"></span></h1>
-			<div x-text="t('statcard.reputation')"></div>
-			<button @click="setLang('en')">EN</button>
-			<button @click="setLang('kr')">KR</button>
+		<div id="app" x-data="layout">
+			<div x-data="locale">
+				<div x-data="header">
+					<div x-html="header_template"></div>
+
+					<h1>Current language is <span x-text="lang"></span></h1>
+					<div x-text="t('title')"></div>
+					<button @click="setLang('en')">en</button>
+					<button @click="setLang('zh-tw')">zh-tw</button>
+					
+				</div>
+			</div>
 		</div>
+		
 		<script type="module" src="./src/app.ts"></script>
+		
 	</body>
 </html>
