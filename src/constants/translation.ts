@@ -1,0 +1,40 @@
+export const statCardLocales = () => {
+  return {
+    'statcard.reputation': {
+      'bn': 'খ্যাতি',
+      'cn': '声量',
+      'de': 'Ruf',
+      'en': 'Reputation',
+      'es': 'Reputación',
+      'fy': 'Reputaasje',
+      'kr': '평판',
+      'nl': 'Reputatie',
+      'tr': 'İtibar',
+      'zh-tw': '聲量',
+    },
+    'statcard.question': {
+      'bn': 'প্রশ্ন সমূহ',
+      'cn': '问题',
+      'de': 'Fragen',
+      'en': 'Questions',
+      'es': 'Preguntas',
+      'fy': 'Fragen',
+      'kr': '의문',
+      'nl': 'Vragen',
+      'tr': 'Sorular',
+      'zh-tw': '問題',
+    },
+    'statcard.answer': {
+      'bn': 'উত্তর সমূহ',
+      'cn': '回答',
+      'de': 'Answers',
+      'en': 'Answers',
+      'es': 'Respuestas',
+      'fy': 'Antwurden',
+      'kr': '대답',
+      'nl': 'Antwoorden',
+      'tr': 'Yanıtlar',
+      'zh-tw': '回答',
+    },
+  }
+}
