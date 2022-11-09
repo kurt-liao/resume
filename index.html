@@ -6,9 +6,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Kurt Resume</title>
 		<link rel="stylesheet" href="./src/assets/styles/index.css" />
+		<script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
 	</head>
 	<body>
 		<div id="app" x-data="layout">
+			
+			<div x-data="spin" x-html="spin_template"></div>
 			<div x-data="locale">
 				<div x-data="header">
 					<div x-html="header_template"></div>

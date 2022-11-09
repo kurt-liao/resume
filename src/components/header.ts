@@ -1,4 +1,7 @@
-export default () => ({
+import type { Component } from '../types'
+
+export default (): Component => ({
+  _name: 'header',
   tab: 'resume',
   template: `
   <div class="border-b-2">
