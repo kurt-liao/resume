@@ -1,31 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Kurt Resume</title>
-		<link rel="stylesheet" href="./src/assets/styles/index.css" />
-		<script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
-	</head>
-	<body>
-		<div id="app" x-data="layout">
-			
-			<div x-data="spin" x-html="spin_template"></div>
-			<div x-data="locale">
-				<div x-data="header">
-					<div x-html="header_template"></div>
 
-					<h1>Current language is <span x-text="$store.locale.lang"></span></h1>
-					<div x-text="$store.locale.t('title')"></div>
-					<button @click="$store.locale.setLang('en')">en</button>
-					<button @click="$store.locale.setLang('zh-tw')">zh-tw</button>
-					
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Kurt Resume</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300&family=Noto+Sans+TC:wght@500&display=swap"
+		rel="stylesheet">
+
+
+	<script defer src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+</head>
+
+<body>
+	<div id="app" x-data="components" class="h-full w-full bg-slate-200 py-20">
+		<div class="flex flex-col gap-24 md:gap-36 m-auto max-w-screen-lg border-2 border-gray-200 bg-white p-2 md:p-8"
+			style="box-shadow: -1px 5px 35px -9px rgb(0 0 0 / 20%)">
+
+			<section id="intro">
+
+				<div class="flex justify-between mb-12">
+					<div class="flex flex-wrap gap-2">
+						<button @click="$store.locale.setLang('en')" class="text-2xl button"
+							:class="$store.locale.lang === 'en' ? 'bg-blue-600' : 'bg-stone-500'">en</button>
+						<button @click="$store.locale.setLang('zh-tw')" class="text-2xl button"
+							:class="$store.locale.lang === 'zh-tw' ? 'bg-blue-600' : 'bg-stone-500'">zh-tw</button>
+					</div>
+
+					<button @click="" class="text-2xl button bg-stone-500 hover:bg-blue-600"
+						x-text="$store.locale.t('export')"></button>
 				</div>
-			</div>
+
+				<h1 class="text-6xl font-bold mb-8" x-text="$store.locale.t('name')"></h1>
+				<div class="text-center text-2xl mb-8" x-text="$store.locale.t('description')"></div>
+
+				<ul class="flex flex-wrap gap-2 justify-center mb-8">
+					<li class="tech-stack-tag bg-yellow-500">#JavaScript</li>
+					<li class="tech-stack-tag bg-blue-600">#TypeScript</li>
+					<li class="tech-stack-tag bg-green-500">#Vue</li>
+					<li class="tech-stack-tag bg-green-300">#Nuxt</li>
+				</ul>
+
+				<div class="flex justify-center gap-8">
+					<a href="https://github.com/kurt-liao" target="_blank" class="text-5xl hover:scale-125 hover:rotate-[360deg] transition-transform duration-700">
+						<iconify-icon icon="codicon:github-inverted">
+						</iconify-icon>
+					</a>
+					<a href="mailto:vermouth0226@gmail.com" class="text-5xl hover:scale-125 hover:rotate-[360deg] transition-transform duration-700">
+						<iconify-icon icon="carbon:email">
+						</iconify-icon>
+					</a>
+					<a href="https://me.kurtstories.com" target="_blank" class="text-5xl hover:scale-125 hover:rotate-[360deg] transition-transform duration-700">
+						<iconify-icon icon="charm:terminal">
+						</iconify-icon>
+					</a>
+				</div>
+
+			</section>
+
+			<section id="experience">
+				<h2 class="text-4xl font-bold mb-8" x-text="$store.locale.t('experience')"></h2>
+			</section>
+
 		</div>
-		
-		<script type="module" src="./src/app.ts"></script>
-		
-	</body>
+
+	</div>
+	<script type="module" src="./src/app.ts"></script>
+</body>
+
 </html>

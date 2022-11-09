@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @import url('./spin.css'); */
+body {
+  background-color: #e9ebee;
+  font-family: 'Marhey', cursive, 'Noto Sans TC', sans-serif;
+}
 
 .loader {
   position: relative;
@@ -73,3 +76,34 @@
 }
 
 
+.button {
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  color: #fff;
+  border: 2px solid transparent;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: .2rem .5rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tech-stack-tag {
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  color: #fff;
+  border: 2px solid transparent;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1;
+  padding: .2rem .5rem;
+  text-align: center;
+  white-space: nowrap;
+}

@@ -4,8 +4,8 @@ export default (): Component => ({
   _name: 'spin',
   template: `<div class="loader">
   <div class="rocket-wrapper">
-  <iconify-icon icon="fluent-emoji:rocket" class="rocket"></div>
-  </iconify-icon>
+  <iconify-icon icon="fluent-emoji:rocket" class="rocket">
+  </iconify-icon></div>
   <span style="--i:1;"></span>
   <span style="--i:2;"></span>
   <span style="--i:3;"></span>
