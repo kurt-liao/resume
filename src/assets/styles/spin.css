@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 .loader {
   position: relative;
   width: 120px;
@@ -38,15 +43,15 @@
   }
 }
 
-.rocket {
+.rocket-wrapper {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  animation: rotating 2s linear infinite;
-  animation-delay: -1s;
+  animation: 2s linear .5s infinite rotating;
 }
+
 @keyframes rotating {
   0% {
     transform: rotate(10deg);
@@ -56,9 +61,7 @@
   }
 }
 
-.rocket::before {
-  content: "\f135";
-  font-family: "FontAwesome";
+.rocket {
   position: absolute;
   top: 80px;
   left: 85px;

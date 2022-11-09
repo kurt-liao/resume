@@ -16,10 +16,10 @@
 				<div x-data="header">
 					<div x-html="header_template"></div>
 
-					<h1>Current language is <span x-text="lang"></span></h1>
-					<div x-text="t('title')"></div>
-					<button @click="setLang('en')">en</button>
-					<button @click="setLang('zh-tw')">zh-tw</button>
+					<h1>Current language is <span x-text="$store.locale.lang"></span></h1>
+					<div x-text="$store.locale.t('title')"></div>
+					<button @click="$store.locale.setLang('en')">en</button>
+					<button @click="$store.locale.setLang('zh-tw')">zh-tw</button>
 					
 				</div>
 			</div>
