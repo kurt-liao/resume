@@ -30,7 +30,7 @@ export const translation = () => {
     },
     'stern-period-content': {
       'en': 'Apr 2022 ~ Present',
-      'zh-tw': '2022/04 ~',
+      'zh-tw': '2022/04 ~ 現職',
     },
     'stern-position-content': {
       'en': 'Frontend Engineer',
@@ -55,6 +55,10 @@ export const translation = () => {
     'ilinke-job-responsibility-content': {
       'en': '123',
       'zh-tw': '123',
+    },
+    'tech-stack': {
+      'en': 'Tech Stack',
+      'zh-tw': '使用的技術',
     },
     'skills': {
       'en': '🛠️Skills',
@@ -85,8 +89,8 @@ export const translation = () => {
       'zh-tw': '資訊工程系',
     },
     'job-seeking': {
-      'en': '👀I\'m looking for a job...',
-      'zh-tw': '👀我正在尋找工作...',
+      'en': '👀Looking for a chance...',
+      'zh-tw': '👀尋找機會...',
     },
     'position': {
       'en': 'Position',
@@ -103,6 +107,22 @@ export const translation = () => {
     'place-content': {
       'en': 'Taichung Taiwan, Remote',
       'zh-tw': '台中、遠端',
+    },
+    'in-progress': {
+      'en': '🏃Still in progress...',
+      'zh-tw': '🏃努力製作中...',
+    },
+    'rabbit-fly': {
+      'en': 'Rabbit fly. Down stairs game made in Unity:',
+      'zh-tw': 'Rabbit fly, 一款使用 Unity 製作的下樓梯遊戲：',
+    },
+    'video': {
+      'en': 'Video',
+      'zh-tw': '影片',
+    },
+    'project': {
+      'en': 'Project',
+      'zh-tw': '專案',
     },
   }
 }
