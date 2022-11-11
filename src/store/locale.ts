@@ -3,19 +3,18 @@ import { translation } from '../constants/translation'
 
 export default function (): AlpineComponent {
   return {
-    lang: 'en',
+    lang: false,
     translations: translation(),
     t(str: string) {
+      const _lang = this.lang ? 'zh-tw' : 'en'
+
       if (!this.translations[str])
         throw new Error(`${str} Translation string not found`)
 
-      if (!this.translations[str][this.lang])
+      if (!this.translations[str][_lang])
         throw new Error(`${str} Translation locale not found`)
 
-      return this.translations[str][this.lang]
-    },
-    setLang(value: string) {
-      this.lang = value
+      return this.translations[str][_lang]
     },
   }
 }

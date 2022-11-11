@@ -17,16 +17,30 @@
 <body>
 	<div id="app" x-data="components" class="h-full w-full bg-slate-200 pb-20 pt-10">
 
-		<div class="switch-holder">
-			<div class="switch-label">
-				<i class="fa fa-bluetooth-b"></i><span>Resume</span>
+		<div class="flex flex-col md:flex-row justify-center items-center gap-2">
+			<div class="switch-holder">
+				<div class="switch-label text-left">
+					<span>EN</span>
+				</div>
+				<div class="switch-toggle">
+					<input type="checkbox" id="lang" x-model="$store.locale.lang">
+					<label for="lang"></label>
+				</div>
+				<div class="switch-label text-right">
+					<span>ZH-TW</span>
+				</div>
 			</div>
-			<div class="switch-toggle">
-				<input type="checkbox" id="type" x-model="$store.type.type">
-				<label for="type"></label>
-			</div>
-			<div class="switch-label">
-				<i class="fa fa-bluetooth-b"></i><span>Portfolio</span>
+			<div class="switch-holder">
+				<div class="switch-label text-left">
+					<span>RESUME</span>
+				</div>
+				<div class="switch-toggle">
+					<input type="checkbox" id="type" x-model="$store.type.type">
+					<label for="type"></label>
+				</div>
+				<div class="switch-label text-right">
+					<span>PORTFOLIO</span>
+				</div>
 			</div>
 		</div>
 
@@ -37,14 +51,7 @@
 
 				<section id="intro">
 
-					<div class="flex justify-between mb-12">
-						<div class="flex flex-wrap gap-2">
-							<button @click="$store.locale.setLang('en')" class="text-2xl button"
-								:class="$store.locale.lang === 'en' ? 'bg-blue-600' : 'bg-stone-500'">en</button>
-							<button @click="$store.locale.setLang('zh-tw')" class="text-2xl button"
-								:class="$store.locale.lang === 'zh-tw' ? 'bg-blue-600' : 'bg-stone-500'">zh-tw</button>
-						</div>
-
+					<div class="flex justify-end mb-12">
 						<button @click="$store.utils.exportPdf()" class="text-2xl button bg-stone-500 hover:bg-blue-600"
 							x-text="$store.locale.t('export')"></button>
 					</div>
@@ -98,8 +105,8 @@
 							<p class="content-text" x-text="$store.locale.t('stern-position-content')"></p>
 						</div>
 						<div class="content-block">
-							<p class="content-title" x-text="$store.locale.t('description')"></p>
-							<p class="content-text" x-text="$store.locale.t('stern-description-content')"></p>
+							<p class="content-title" x-text="$store.locale.t('job-responsibility')"></p>
+							<p class="content-text" x-text="$store.locale.t('stern-job-responsibility-content')"></p>
 						</div>
 					</div>
 
@@ -117,15 +124,81 @@
 							<p class="content-text" x-text="$store.locale.t('ilinke-position-content')"></p>
 						</div>
 						<div class="content-block">
-							<p class="content-title" x-text="$store.locale.t('description')"></p>
-							<p class="content-text" x-text="$store.locale.t('ilinke-description-content')"></p>
+							<p class="content-title" x-text="$store.locale.t('job-responsibility')"></p>
+							<p class="content-text" x-text="$store.locale.t('ilinke-job-responsibility-content')"></p>
 						</div>
 					</div>
 				</section>
 
 				<section id="skills">
 					<h2 class="text-4xl font-bold mb-8" x-text="$store.locale.t('skills')"></h2>
-					<ul class="flex flex-wrap gap-2 justify-center mb-8">
+					<ul>
+						<li class="skill-content">
+							<span>JavaScript</span>
+							<div class="progress skill-bar ">
+								<div data-bg="bg-yellow-400" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+									aria-valuemax="100">
+								</div>
+							</div>
+						</li>
+						<li class="skill-content">
+							<span>TypeScript</span>
+							<div class="progress skill-bar ">
+								<div data-bg="bg-indigo-700" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+									aria-valuemax="100">
+								</div>
+							</div>
+						</li>
+						<li class="skill-content">
+							<span>CSS / SCSS</span>
+							<div class="progress skill-bar ">
+								<div data-bg="bg-red-400" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+									aria-valuemax="100">
+								</div>
+							</div>
+						</li>
+						<li class="skill-content">
+							<span>Vue</span>
+							<div class="progress skill-bar ">
+								<div data-bg="bg-teal-600" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+									aria-valuemax="100">
+								</div>
+							</div>
+						</li>
+						<li class="skill-content">
+							<span>Nuxt</span>
+							<div class="progress skill-bar ">
+								<div data-bg="bg-emerald-500" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+									aria-valuemax="100">
+								</div>
+							</div>
+						</li>
+						<li class="skill-content">
+							<span>Tailwindcss</span>
+							<div class="progress skill-bar ">
+								<div data-bg="bg-cyan-600" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+									aria-valuemax="100">
+								</div>
+							</div>
+						</li>
+						<li class="skill-content">
+							<span>Git</span>
+							<div class="progress skill-bar ">
+								<div data-bg="bg-slate-700" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+									aria-valuemax="100">
+								</div>
+							</div>
+						</li>
+						<li class="skill-content">
+							<span>Docker</span>
+							<div class="progress skill-bar ">
+								<div data-bg="bg-sky-700" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+									aria-valuemax="100">
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- <ul class="flex flex-wrap gap-2 justify-center mb-8">
 						<li class="tech-stack-tag bg-yellow-400">&lt;JavaScript&gt;</li>
 						<li class="tech-stack-tag bg-indigo-700">&lt;TypeScript&gt;</li>
 						<li class="tech-stack-tag bg-teal-600">&lt;Vue&gt;</li>
@@ -138,7 +211,7 @@
 						<li class="tech-stack-tag bg-slate-700">&lt;Git&gt;</li>
 						<li class="tech-stack-tag bg-sky-700">&lt;Docker&gt;</li>
 						<li class="tech-stack-tag bg-amber-500">&lt;AWS&gt;</li>
-					</ul>
+					</ul> -->
 				</section>
 
 				<section id="education">

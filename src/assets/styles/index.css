@@ -215,7 +215,6 @@ body {
 .switch-holder {
   display: flex;
   max-width: 300px;
-  margin: 1rem auto;
   padding: 10px 20px;
   border-radius: 10px;
   margin-bottom: 30px;
@@ -269,7 +268,7 @@ body {
   width: 45px;
   height: 25px;
   border-radius: 20px;
-  background-color: rgba(56,189,248, .75);
+  background-color: rgba(56, 189, 248, .75);
   box-shadow: -3px -3px 5px rgba(255, 255, 255, .5),
     3px 3px 5px #0891b2;
   transition: .3s ease-in-out;
@@ -279,7 +278,34 @@ body {
   left: 50%;
   content: '';
   color: #fff;
-  background-color: rgba(74,222,128, .75);
+  background-color: rgba(74, 222, 128, .75);
   box-shadow: -3px -3px 5px rgba(255, 255, 255, .5),
     3px 3px 5px #15803d;
+}
+
+.skill-content {
+  margin-bottom: 10px;
+}
+.skill-content > span {
+  display: block;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #888888;
+  line-height: 17px;
+  margin-bottom: 4px;
+}
+
+.progress {
+  height: 8px;
+  border-radius: 20px;
+  background: #e4e4e7;
+}
+
+.progress-bar {
+  text-align: left;
+  height: 100%;
+  border-radius: 20px;
+  transition-duration: 3s;
 }

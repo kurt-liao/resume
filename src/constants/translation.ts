@@ -20,6 +20,10 @@ export const translation = () => {
       'en': 'Description',
       'zh-tw': '說明',
     },
+    'job-responsibility': {
+      'en': 'Job Responsibility',
+      'zh-tw': '工作內容',
+    },
     'stern': {
       'en': 'Stern Information',
       'zh-tw': '思騰資訊',
@@ -32,9 +36,9 @@ export const translation = () => {
       'en': 'Frontend Engineer',
       'zh-tw': '前端工程師',
     },
-    'stern-description-content': {
-      'en': '',
-      'zh-tw': '',
+    'stern-job-responsibility-content': {
+      'en': '123',
+      'zh-tw': '123',
     },
     'ilinke': {
       'en': 'Ilinke',
@@ -48,9 +52,9 @@ export const translation = () => {
       'en': 'Full Stack Engineer',
       'zh-tw': '全端工程師',
     },
-    'ilinke-description-content': {
-      'en': '',
-      'zh-tw': '',
+    'ilinke-job-responsibility-content': {
+      'en': '123',
+      'zh-tw': '123',
     },
     'skills': {
       'en': '🛠️Skills',
