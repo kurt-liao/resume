@@ -39,7 +39,7 @@
 						<div class="switch-label text-left">
 							<span>RESUME</span>
 						</div>
-						<div class="switch-toggle">
+						<div class="switch-toggle" x-init="$watch($store.system.type, value => console.log(value))">
 							<input type="checkbox" id="type" x-model="$store.system.type">
 							<label for="type"></label>
 						</div>
@@ -110,8 +110,8 @@
 									<p class="content-text" x-text="$store.locale.t('stern-position-content')"></p>
 								</div>
 								<div class="content-block">
-									<p class="content-title" x-text="$store.locale.t('job-responsibility')"></p>
-									<ul class="flex flex-col gap-2 list-plane" x-html="$store.locale.t('stern-job-responsibility-content')">
+									<p class="content-title" x-text="$store.locale.t('work-duties')"></p>
+									<ul class="flex flex-col gap-2 list-plane" x-html="$store.locale.t('stern-work-duties-content')">
 									</ul>
 								</div>
 								<div class="content-block">
@@ -145,8 +145,8 @@
 									<p class="content-text" x-text="$store.locale.t('ilinke-position-content')"></p>
 								</div>
 								<div class="content-block">
-									<p class="content-title" x-text="$store.locale.t('job-responsibility')"></p>
-									<p class="content-text" x-text="$store.locale.t('ilinke-job-responsibility-content')"></p>
+									<p class="content-title" x-text="$store.locale.t('work-duties')"></p>
+									<ul class="flex flex-col gap-2 list-plane" x-html="$store.locale.t('ilinke-work-duties-content')"></ul>
 								</div>
 								<div class="content-block">
 									<p class="content-title" x-text="$store.locale.t('project')"></p>
@@ -312,6 +312,12 @@
 						</section>
 					</div>
 				</template>
+
+				<!-- <template x-if="!$store.system.type">
+					<div class="fixed top-6 left-5">
+						123
+					</div>
+				</template> -->
 
 				<template x-if="$store.system.type">
 					<div id="portfolio">

@@ -29,5 +29,19 @@ export default (alpine: Alpine) => {
         p.classList.add(p.getAttribute('data-bg')!)
       })
     },
+    initPortfolio() {
+      // TODO
+    },
+    init() {
+      alpine.effect(() => {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-expect-error
+        if (alpine.store('system').type)
+          document.title = 'Kurt\'s Portfolio'
+
+        else
+          document.title = 'Kurt\'s Resume'
+      })
+    },
   })
 }

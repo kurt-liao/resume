@@ -20,8 +20,8 @@ export const translation = () => {
       'en': 'Description',
       'zh-tw': '說明',
     },
-    'job-responsibility': {
-      'en': 'Job Responsibility',
+    'work-duties': {
+      'en': 'Work duties',
       'zh-tw': '工作內容',
     },
     'stern': {
@@ -36,24 +36,48 @@ export const translation = () => {
       'en': 'Frontend Engineer',
       'zh-tw': '前端工程師',
     },
-    'stern-job-responsibility-content': {
+    'stern-work-duties-content': {
       'en': `<li class="list-item list-inside content-text">
-      <span>1</span>
+      <span>Figma/PSD to HTML,CSS.</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>2</span>
+      <span>Design and Integrate backend api.</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>3</span>
+      <span>Integrate 3rd party payment.</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Database design.</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Development environment setup.</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Unit testing & End-to-end testing.</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Establish the development timeline.</span>
     </li>`,
       'zh-tw': `<li class="list-item list-inside content-text">
-      <span>1</span>
+      <span>按照設計師給的畫面切版</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>2</span>
+      <span>API 撰寫 / 串接</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>3</span>
+      <span>第三方服務串接(金流)</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>資料庫設計</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Docker 開發環境建置</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>單元測試 & End-to-end 測試</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>開發時程掌控</span>
     </li>`,
     },
     'ilinke': {
@@ -68,9 +92,67 @@ export const translation = () => {
       'en': 'Full Stack Engineer',
       'zh-tw': '全端工程師',
     },
-    'ilinke-job-responsibility-content': {
-      'en': '123',
-      'zh-tw': '123',
+    'ilinke-work-duties-content': {
+      'en': `<li class="list-item list-inside content-text">
+      <span>Figma/PSD to HTML,CSS.</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Maintain and Improve the website.</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Develop mobile app using react native webview.</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Design and integrate backend API.</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Integrate 3rd party payment, logistics, google ga, google login, etc.</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Optimize application like SEO, speed of website, etc.</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Deploy to AWS with EC2, S3, Cloudfront, Route53.</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Deploy mobile app to play store & app store.</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Unit testing & End-to-end testing.</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Establish the development timeline.</span>
+    </li>`,
+      'zh-tw': `<li class="list-item list-inside content-text.">
+      <span>按照設計師給的畫面切版</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>開發新專案、維護既有專案</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>使用 React Native Webview 開發手機 APP</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>設計 / 串接後端 API</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>第三方服務串接，如：金流、物流、Google GA、Google 登入...等等</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>優化網站，如：SEO、網站速度</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>部署專案至 AWS，使用到的服務有 EC2、S3、Cloudfront、Route53</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>部署 APP 至 Play Store & App Store</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>單元測試 & End-to-end 測試</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>開發時程掌控</span>
+    </li>`,
     },
     'jcolor': {
       'en': 'JColor, an e-commerce website of TPEx-listed printing company.',
@@ -89,7 +171,7 @@ export const translation = () => {
       'zh-tw': '9199, 點數卡買賣電商網站',
     },
     'tech-stack': {
-      'en': 'Tech Stack',
+      'en': 'Tech Stacks',
       'zh-tw': '使用的技術',
     },
     'skills': {
