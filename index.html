@@ -25,26 +25,26 @@
 				<div class="flex flex-col md:flex-row justify-center items-center gap-2">
 					<div class="switch-holder">
 						<div class="switch-label text-left">
-							<span>EN</span>
+							<span class="uppercase" x-text="$store.locale.t('en')"></span>
 						</div>
 						<div class="switch-toggle">
 							<input type="checkbox" id="lang" x-model="$store.locale.lang">
 							<label for="lang"></label>
 						</div>
 						<div class="switch-label text-right">
-							<span>ZH-TW</span>
+							<span class="uppercase" x-text="$store.locale.t('zh-tw')"></span>
 						</div>
 					</div>
 					<div class="switch-holder">
 						<div class="switch-label text-left">
-							<span>RESUME</span>
+							<span class="uppercase" x-text="$store.locale.t('resume')"></span>
 						</div>
 						<div class="switch-toggle" x-init="$watch($store.system.type, value => console.log(value))">
 							<input type="checkbox" id="type" x-model="$store.system.type">
 							<label for="type"></label>
 						</div>
 						<div class="switch-label text-right">
-							<span>PORTFOLIO</span>
+							<span class="uppercase" x-text="$store.locale.t('portfolio')"></span>
 						</div>
 					</div>
 				</div>
@@ -146,7 +146,8 @@
 								</div>
 								<div class="content-block">
 									<p class="content-title" x-text="$store.locale.t('work-duties')"></p>
-									<ul class="flex flex-col gap-2 list-plane" x-html="$store.locale.t('ilinke-work-duties-content')"></ul>
+									<ul class="flex flex-col gap-2 list-plane" x-html="$store.locale.t('ilinke-work-duties-content')">
+									</ul>
 								</div>
 								<div class="content-block">
 									<p class="content-title" x-text="$store.locale.t('project')"></p>
@@ -154,29 +155,25 @@
 										<li class="list-item list-inside content-text">
 											<span x-text="$store.locale.t('jcolor')">
 											</span>
-											<a class="text-blue-400 underline hover:text-cyan-200"
-												href="https://www.jcolor.com.tw/"
+											<a class="text-blue-400 underline hover:text-cyan-200" href="https://www.jcolor.com.tw/"
 												x-text="$store.locale.t('link')" target="_blank"></a>
 										</li>
 										<li class="list-item list-inside content-text">
 											<span x-text="$store.locale.t('cupoy')">
 											</span>
-											<a class="text-blue-400 underline hover:text-cyan-200"
-												href="https://www.cupoy.com/"
+											<a class="text-blue-400 underline hover:text-cyan-200" href="https://www.cupoy.com/"
 												x-text="$store.locale.t('link')" target="_blank"></a>
 										</li>
 										<li class="list-item list-inside content-text">
 											<span x-text="$store.locale.t('everprinter')">
 											</span>
-											<a class="text-blue-400 underline hover:text-cyan-200"
-												href="https://everprinter.com/"
+											<a class="text-blue-400 underline hover:text-cyan-200" href="https://everprinter.com/"
 												x-text="$store.locale.t('link')" target="_blank"></a>
 										</li>
 										<li class="list-item list-inside content-text">
 											<span x-text="$store.locale.t('9199')">
 											</span>
-											<a class="text-blue-400 underline hover:text-cyan-200"
-												href="https://www.9199.com.tw/"
+											<a class="text-blue-400 underline hover:text-cyan-200" href="https://www.9199.com.tw/"
 												x-text="$store.locale.t('link')" target="_blank"></a>
 										</li>
 									</ul>
@@ -313,11 +310,36 @@
 					</div>
 				</template>
 
-				<!-- <template x-if="!$store.system.type">
-					<div class="fixed top-6 left-5">
-						123
+				<template x-if="!$store.system.type">
+					<div class="hidden xl:flex fixed top-0 bottom-0 opacity-50 text-white bg-slate-600 flex-col justify-between p-4 py-10">
+						<button class="tooltip cursor-pointer" @click="$store.utils.scrollTo('intro')">
+							<span class="tooltiptext" x-text="$store.locale.t('profile')"></span>
+							<iconify-icon icon="cib:about-me" class="text-3xl">
+							</iconify-icon>
+						</button>
+						<button class="tooltip cursor-pointer" @click="$store.utils.scrollTo('experience')">
+							<span class="tooltiptext" x-text="$store.locale.t('experience')"></span>
+							<iconify-icon icon="fluent-mdl2:work" class="text-3xl">
+							</iconify-icon>
+						</button>
+						<button class="tooltip cursor-pointer" @click="$store.utils.scrollTo('skills')">
+							<span class="tooltiptext" x-text="$store.locale.t('skills')">
+								text</span>
+							<iconify-icon icon="carbon:skill-level-advanced" class="text-3xl">
+							</iconify-icon>
+						</button>
+						<button class="tooltip cursor-pointer" @click="$store.utils.scrollTo('education')">
+							<span class="tooltiptext" x-text="$store.locale.t('education')"></span>
+							<iconify-icon icon="fluent-mdl2:education" class="text-3xl">
+							</iconify-icon>
+						</button>
+						<button class="tooltip cursor-pointer" @click="$store.utils.scrollTo('job-seeking')">
+							<span class="tooltiptext" x-text="$store.locale.t('job-seeking')"></span>
+							<iconify-icon icon="cil:search" class="text-3xl">
+							</iconify-icon>
+						</button>
 					</div>
-				</template> -->
+				</template>
 
 				<template x-if="$store.system.type">
 					<div id="portfolio">

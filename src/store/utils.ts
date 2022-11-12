@@ -7,5 +7,10 @@ export default function (): AlpineComponent {
       const element = document.getElementById('app')
       html2pdf(element)
     },
+    scrollTo(id: string) {
+      const element = document.getElementById(id)
+      if (element)
+        element.scrollIntoView({ behavior: 'smooth' })
+    },
   }
 }

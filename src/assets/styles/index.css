@@ -215,7 +215,7 @@ body {
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   line-height: 2rem;
   border-style: solid;
   border-left-width: 1rem;
@@ -227,7 +227,7 @@ body {
 .switch-holder {
   display: flex;
   max-width: 300px;
-  padding: 10px 20px;
+  padding: 10px 10px;
   border-radius: 10px;
   margin-bottom: 30px;
   box-shadow: -8px -8px 15px rgba(255, 255, 255, .7),
@@ -324,4 +324,29 @@ body {
 
 .list-item {
   display: list-item;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }

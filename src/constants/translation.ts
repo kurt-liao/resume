@@ -1,20 +1,40 @@
 export const translation = () => {
   return {
+    'en': {
+      'en': 'EN',
+      'zh-tw': '英文',
+    },
+    'zh-tw': {
+      'en': 'ZH-TW',
+      'zh-tw': '中文',
+    },
+    'resume': {
+      'en': 'Resume',
+      'zh-tw': '履歷',
+    },
+    'portfolio': {
+      'en': 'Portfolio',
+      'zh-tw': '作品集',
+    },
+    'profile': {
+      'en': 'Profile',
+      'zh-tw': '簡介',
+    },
     'name': {
       'en': 'Kurt Liao',
       'zh-tw': '廖晨竹',
     },
     'brief': {
-      'en': 'I\'m a Frontend engineer who loves JavaScript, TypeScript and CSS. I am interested in learning open source like Vue, Vite, Qwik, JQuery and so on. Additionally, I have experience in Testing(Jest, Vitest), Backend developing(Rest api, SQL, Mongo...) and also some DevOps skills like Docker, Github Action, AWS S3, EC2, etc.',
-      'zh-tw': '我是一個喜愛 JavaScript、TypeScript 還有 CSS 的前端工程師。我的興趣是研究開源的專案，像是 Vue、Vite、Qwik、JQuery...等等。另外我也有使用 Jest、Vitest 測試的經驗、後端 API 的開發、SQL、NoSQL 的使用，還有一些維運相關的技能，像是 Docker 、Github Action、AWS 的 S3、Cloudfront 服務等等。',
+      'en': 'I\'m a Frontend engineer who loves JavaScript, TypeScript and CSS. I have almost 3 years work experience in web development. Outside of work, I am interested in learning open source like Vue, Vite, Qwik, JQuery and so on. Additionally, I have experience in Testing(Jest, Vitest), Backend developing(Rest api, SQL, Mongo...) and also some DevOps skills like Docker, Github Action, AWS S3, EC2, etc.',
+      'zh-tw': '我是一個喜愛 JavaScript、TypeScript 還有 CSS 的前端工程師。我在網頁開發領域擁有將近 3 年的經驗。工作之餘，我的興趣是研究開源的專案，像是 Vue、Vite、Qwik、JQuery...等等。另外我也有使用 Jest、Vitest 測試的經驗、後端 API 的開發、SQL、NoSQL 的使用，還有一些維運相關的技能，像是 Docker 、Github Action、AWS 的 S3、Cloudfront 服務等等。',
     },
     'export': {
       'en': 'Download PDF',
       'zh-tw': '下載 PDF',
     },
     'experience': {
-      'en': '💼 Employment History (3+)',
-      'zh-tw': '💼 工作經歷 (3+)',
+      'en': '💼 Employment History',
+      'zh-tw': '💼 工作經歷',
     },
     'description': {
       'en': 'Description',
@@ -184,7 +204,7 @@ export const translation = () => {
     },
     'college': {
       'en': 'National Taiwan University of Science and Technology (BS)',
-      'zh-tw': '臺灣科技大學',
+      'zh-tw': '臺灣科技大學(學士)',
     },
     'period': {
       'en': 'Period',
