@@ -13,8 +13,8 @@ export const translation = () => {
       'zh-tw': '下載 PDF',
     },
     'experience': {
-      'en': '💼 Employment History',
-      'zh-tw': '💼 工作經歷',
+      'en': '💼 Employment History (3+)',
+      'zh-tw': '💼 工作經歷 (3+)',
     },
     'description': {
       'en': 'Description',
@@ -37,8 +37,24 @@ export const translation = () => {
       'zh-tw': '前端工程師',
     },
     'stern-job-responsibility-content': {
-      'en': '123',
-      'zh-tw': '123',
+      'en': `<li class="list-item list-inside content-text">
+      <span>1</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>2</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>3</span>
+    </li>`,
+      'zh-tw': `<li class="list-item list-inside content-text">
+      <span>1</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>2</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>3</span>
+    </li>`,
     },
     'ilinke': {
       'en': 'Ilinke',
@@ -55,6 +71,22 @@ export const translation = () => {
     'ilinke-job-responsibility-content': {
       'en': '123',
       'zh-tw': '123',
+    },
+    'jcolor': {
+      'en': 'JColor, an e-commerce website of TPEx-listed printing company.',
+      'zh-tw': '捷可印, 上櫃印刷公司電商網站',
+    },
+    'cupoy': {
+      'en': 'Cupoy, an AI community website.',
+      'zh-tw': 'Cupoy, AI 學習社群網站',
+    },
+    'everprinter': {
+      'en': 'Everprinter, an e-commerce website of printing company.',
+      'zh-tw': '貼紙先生, 貼紙印刷電商網站',
+    },
+    '9199': {
+      'en': '9199, an e-commerce website of online game gift card.',
+      'zh-tw': '9199, 點數卡買賣電商網站',
     },
     'tech-stack': {
       'en': 'Tech Stack',
@@ -119,6 +151,10 @@ export const translation = () => {
     'video': {
       'en': 'Video',
       'zh-tw': '影片',
+    },
+    'link': {
+      'en': 'Link',
+      'zh-tw': '連結',
     },
     'project': {
       'en': 'Project',

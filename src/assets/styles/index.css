@@ -2,9 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@counter-style custom {
+@counter-style plant {
   system: cyclic;
   symbols: "\1F33F" "\1F341" "\1F335" "\1F344";
+  suffix: " ";
+}
+
+@counter-style plane {
+  system: cyclic;
+  symbols: 🚀 🛰️ 🛸 🛩️ ✈️ 🚁;
   suffix: " ";
 }
 

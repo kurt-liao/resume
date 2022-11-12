@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       listStyleType: {
-        custom: 'custom',
+        plant: 'plant',
+        plane: 'plane',
       },
     },
   },

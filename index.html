@@ -111,7 +111,8 @@
 								</div>
 								<div class="content-block">
 									<p class="content-title" x-text="$store.locale.t('job-responsibility')"></p>
-									<p class="content-text" x-text="$store.locale.t('stern-job-responsibility-content')"></p>
+									<ul class="flex flex-col gap-2 list-plane" x-html="$store.locale.t('stern-job-responsibility-content')">
+									</ul>
 								</div>
 								<div class="content-block">
 									<p class="content-title flex-none" x-text="$store.locale.t('tech-stack')"></p>
@@ -146,6 +147,39 @@
 								<div class="content-block">
 									<p class="content-title" x-text="$store.locale.t('job-responsibility')"></p>
 									<p class="content-text" x-text="$store.locale.t('ilinke-job-responsibility-content')"></p>
+								</div>
+								<div class="content-block">
+									<p class="content-title" x-text="$store.locale.t('project')"></p>
+									<ul class="flex flex-col gap-2 list-plant">
+										<li class="list-item list-inside content-text">
+											<span x-text="$store.locale.t('jcolor')">
+											</span>
+											<a class="text-blue-400 underline hover:text-cyan-200"
+												href="https://www.jcolor.com.tw/"
+												x-text="$store.locale.t('link')" target="_blank"></a>
+										</li>
+										<li class="list-item list-inside content-text">
+											<span x-text="$store.locale.t('cupoy')">
+											</span>
+											<a class="text-blue-400 underline hover:text-cyan-200"
+												href="https://www.cupoy.com/"
+												x-text="$store.locale.t('link')" target="_blank"></a>
+										</li>
+										<li class="list-item list-inside content-text">
+											<span x-text="$store.locale.t('everprinter')">
+											</span>
+											<a class="text-blue-400 underline hover:text-cyan-200"
+												href="https://everprinter.com/"
+												x-text="$store.locale.t('link')" target="_blank"></a>
+										</li>
+										<li class="list-item list-inside content-text">
+											<span x-text="$store.locale.t('9199')">
+											</span>
+											<a class="text-blue-400 underline hover:text-cyan-200"
+												href="https://www.9199.com.tw/"
+												x-text="$store.locale.t('link')" target="_blank"></a>
+										</li>
+									</ul>
 								</div>
 								<div class="content-block">
 									<p class="content-title flex-none" x-text="$store.locale.t('tech-stack')"></p>
@@ -251,18 +285,11 @@
 							</div>
 							<div class="content-block">
 								<p class="content-title" x-text="$store.locale.t('project')"></p>
-								<ul class="flex flex-col gap-2 list-custom">
+								<ul class="flex flex-col gap-2 list-plant">
 									<li class="list-item list-inside content-text">
 										<span x-text="$store.locale.t('rabbit-fly')">
 										</span>
-										<a class="text-blue-400 underline"
-											href="https://www.youtube.com/watch?v=v2C9MTq5AsI&t=7s&ab_channel=%E9%98%BF%E6%99%A8"
-											x-text="$store.locale.t('video')" target="_blank"></a>
-									</li>
-									<li class="list-item list-inside content-text">
-										<span x-text="$store.locale.t('rabbit-fly')">
-										</span>
-										<a class="text-blue-400 underline"
+										<a class="text-blue-400 underline hover:text-cyan-200"
 											href="https://www.youtube.com/watch?v=v2C9MTq5AsI&t=7s&ab_channel=%E9%98%BF%E6%99%A8"
 											x-text="$store.locale.t('video')" target="_blank"></a>
 									</li>
