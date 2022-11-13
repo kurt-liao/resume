@@ -39,7 +39,7 @@
 						<div class="switch-label text-left">
 							<span class="uppercase" x-text="$store.locale.t('resume')"></span>
 						</div>
-						<div class="switch-toggle" x-init="$watch($store.system.type, value => console.log(value))">
+						<div class="switch-toggle">
 							<input type="checkbox" id="type" x-model="$store.system.type">
 							<label for="type"></label>
 						</div>

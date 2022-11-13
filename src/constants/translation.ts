@@ -259,7 +259,7 @@ export const translation = () => {
       'zh-tw': '連結',
     },
     'project': {
-      'en': 'Project',
+      'en': 'Projects',
       'zh-tw': '專案',
     },
   }

@@ -28,6 +28,19 @@ export default (alpine: Alpine) => {
         p.style.width = `${p?.getAttribute('aria-valuenow')}%`
         p.classList.add(p.getAttribute('data-bg')!)
       })
+
+      // Fix list-style-type not support in safari
+      // https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type
+      const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
+      if (isSafari) {
+        const elementArr = [].slice.call(
+          document.querySelectorAll('.list-plane, .list-plant'),
+        )
+
+        elementArr.forEach((e: HTMLElement) => {
+          e.classList.add('list-disc')
+        })
+      }
     },
     initPortfolio() {
       // TODO
@@ -38,7 +51,6 @@ export default (alpine: Alpine) => {
         // @ts-expect-error
         if (alpine.store('system').type)
           document.title = 'Kurt\'s Portfolio'
-
         else
           document.title = 'Kurt\'s Resume'
       })
