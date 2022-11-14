@@ -17,7 +17,7 @@
 body {
   height: 100%;
   background-color: #e9ebee;
-  font-family: 'Marhey', cursive, 'Noto Sans TC', sans-serif;
+  font-family: 'Space Mono', monospace;
 }
 
 .loader {
