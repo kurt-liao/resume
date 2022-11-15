@@ -1,4 +1,5 @@
 import type { Alpine } from 'alpinejs'
+import { portfolioMap } from '../constants/portfolio'
 
 import locale from './locale'
 import utils from './utils'
@@ -54,6 +55,34 @@ export default (alpine: Alpine) => {
         else
           document.title = 'Kurt\'s Resume'
       })
+    },
+    openModal(el: HTMLElement) {
+      const modalContainer = document.getElementById('modal-container')!
+      const modal = modalContainer.querySelector('.modal-background .modal')!
+      const background = modalContainer.querySelector('.background')! as HTMLElement
+      const portfolio = document.getElementById('portfolio')!
+      const isTW = (<HTMLInputElement>document.getElementById('lang'))!.checked
+
+      if (portfolio.classList.contains('modal-active')) {
+        portfolio.classList.remove('modal-active')
+        modalContainer.classList.add('out')
+        modal.innerHTML = ''
+      }
+      else {
+        const dataKey = el.getAttribute('data-key')!
+        const data = portfolioMap[dataKey]
+        modalContainer.classList.add('one')
+        modalContainer.classList.remove('out')
+        portfolio.classList.add('modal-active')
+        modal.innerHTML = `<h2>${data.title}</h2>`
+        modal.innerHTML += isTW ? data.tw : data.en
+        background.style.cssText += `
+          background-repeat: no-repeat;
+          background-position: top;
+          background-size: contain;
+          background-image: url('${data.background}');
+        `
+      }
     },
   })
 }
