@@ -64,7 +64,7 @@ export default (alpine: Alpine) => {
       const portfolio = document.getElementById('portfolio')!
       const isTW = (<HTMLInputElement>document.getElementById('lang'))!.checked
 
-      if (portfolio.classList.contains('modal-active')) {
+      if (!el || portfolio.classList.contains('modal-active')) {
         portfolio.classList.remove('modal-active')
         modalContainer.classList.add('out')
         modal.innerHTML = ''
@@ -75,7 +75,7 @@ export default (alpine: Alpine) => {
         modalContainer.classList.add('one')
         modalContainer.classList.remove('out')
         portfolio.classList.add('modal-active')
-        modal.innerHTML = `<iconify-icon icon="akar-icons:cross" class="absolute top-10 right-10">
+        modal.innerHTML = `<iconify-icon icon="akar-icons:cross" class="cross" @click="$store.system.toggleModal(null)">
         </iconify-icon>`
         modal.innerHTML += `<h2>${data.title}</h2>`
         modal.innerHTML += generateWork({ description: isTW ? data.tw : data.en, ...data })

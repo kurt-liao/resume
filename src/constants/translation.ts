@@ -242,10 +242,6 @@ export const translation = () => {
       'en': 'Taichung Taiwan, Remote',
       'zh-tw': '台中、遠端',
     },
-    'in-progress': {
-      'en': '🏃Still in progress...',
-      'zh-tw': '🏃努力製作中...',
-    },
     'rabbit-fly': {
       'en': 'Rabbit fly. Down stairs game made in Unity:',
       'zh-tw': 'Rabbit fly, 一款使用 Unity 製作的下樓梯遊戲：',
