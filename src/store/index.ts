@@ -1,5 +1,6 @@
 import type { Alpine } from 'alpinejs'
 import { portfolioMap } from '../constants/portfolio'
+import generateWork from '../utils/generateWork'
 
 import locale from './locale'
 import utils from './utils'
@@ -56,7 +57,7 @@ export default (alpine: Alpine) => {
           document.title = 'Kurt\'s Resume'
       })
     },
-    openModal(el: HTMLElement) {
+    toggleModal(el: HTMLElement) {
       const modalContainer = document.getElementById('modal-container')!
       const modal = modalContainer.querySelector('.modal-background .modal')!
       const background = modalContainer.querySelector('.background')! as HTMLElement
@@ -75,7 +76,7 @@ export default (alpine: Alpine) => {
         modalContainer.classList.remove('out')
         portfolio.classList.add('modal-active')
         modal.innerHTML = `<h2>${data.title}</h2>`
-        modal.innerHTML += isTW ? data.tw : data.en
+        modal.innerHTML += generateWork({ description: isTW ? data.tw : data.en, ...data })
         background.style.cssText += `
           background-repeat: no-repeat;
           background-position: top;

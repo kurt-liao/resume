@@ -5,8 +5,10 @@ export interface Component {
 }
 
 export interface Portfolio {
-  en: string
-  tw: string
+  en: string[]
+  tw: string[]
   title: string
   background: string
+  repo: string
+  appLink: string
 }
