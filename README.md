@@ -16,6 +16,6 @@ My resume & portfolio made by **Alpinejs** and **Tailwindcss**.
 <img src="https://user-images.githubusercontent.com/32745146/202241653-8e71539e-6743-4446-87ac-30cd32fe3b48.png" width="800" />
 </p>
 
-## Disclaimer
+## Claim
 
 It's my first project written in Alpinejs and I didn't have much time to work on it, so the code are quite nasty. Maybe I will do some refactor if I have time😅.
