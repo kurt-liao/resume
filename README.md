@@ -1,6 +1,6 @@
 # Resume
 
-My resume & portfolio website built with **Alpinejs** and **Tailwindcss**.
+My resume & portfolio made by **Alpinejs** and **Tailwindcss**.
 
 ## Screenshot
 
