@@ -55,7 +55,7 @@ export const portfolioMap: { [key: string]: Portfolio } = {
     en: [],
     tw: [],
     appLink: 'https://kurt-liao.github.io/js-toys/',
-    background: 'https://user-images.githubusercontent.com/32745146/202214236-0adc7214-6906-4ab7-b883-af92a3030e90.png',
+    background: 'https://user-images.githubusercontent.com/32745146/202328644-178c0535-a6c9-4659-b2dd-0d87b4e46857.png',
   },
   'start-nuxt3': {
     title: 'Start Nuxt3',
