@@ -369,7 +369,7 @@
 				</template>
 
 				<template x-if="$store.system.type">
-					<div id="portfolio" class="p-8">
+					<div id="portfolio" class="p-8" x-init="$store.system.initPortfolio()">
 						<div class="flex flex-wrap justify-center gap-2 gap-y-12">
 							<div class="max-w-md lg:max-w-lg cursor-pointer aspect-[4/3]" @click="$store.system.toggleModal($el)"
 								data-key="kurt.me">

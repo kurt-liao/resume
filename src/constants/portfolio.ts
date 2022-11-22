@@ -5,8 +5,8 @@ export const portfolioMap: { [key: string]: Portfolio } = {
     title: 'Kurt.me',
     repo: 'https://github.com/kurt-liao/terminal.me',
     appLink: 'https://me.kurtstories.com',
-    en: ['This is my personal website with terminal style.', 'The website is built with Nuxt3 & Tailwindcss & TypeScript.', 'It\'s an interactive website that you can type some command to interact with me😁'],
-    tw: ['這是我的個人網站，採用的是 terminal 的風格', '此網站適用 Nuxt3 & Tailwindcss & TypeScript 所建構的。', '另外，這是一個互動式的網站(就像 terminal)，在這邊你可以打一些指令與我互動😁'],
+    en: ['This is my personal website with terminal style.', 'The website is built with Nuxt3 & Tailwindcss & TypeScript.', 'It\'s an interactive website that you can type some commands to interact with me😁'],
+    tw: ['這是我的個人網站，使用 Nuxt3 & Tailwindcss & TypeScript 所建構，採用的是 terminal 的風格', '另外，這是一個互動式的網站(就像 terminal)，在這邊你可以打一些指令與我互動😁'],
     background: 'https://user-images.githubusercontent.com/32745146/198423735-d7615739-6317-4871-ba41-ddf139f7c0d7.png',
   },
   'kurt.blog': {

@@ -45,7 +45,7 @@ export default (alpine: Alpine) => {
       }
     },
     initPortfolio() {
-      // TODO
+
     },
     init() {
       alpine.effect(() => {
