@@ -44,13 +44,25 @@ export const translation = () => {
       'en': 'Work duties',
       'zh-tw': '工作內容',
     },
+    'swifteam': {
+      'en': 'Swifteam(YC S20)',
+      'zh-tw': 'Swifteam(YC S20)',
+    },
+    'swifteam-period-content': {
+      'en': 'Jan 2023 ~ Present',
+      'zh-tw': '2023/01 ~ 現職',
+    },
+    'swifteam-position-content': {
+      'en': 'Frontend Engineer(Fully Remote)',
+      'zh-tw': '前端工程師(遠端)',
+    },
     'stern': {
       'en': 'Stern Information',
       'zh-tw': '思騰資訊',
     },
     'stern-period-content': {
-      'en': 'Apr 2022 ~ Present',
-      'zh-tw': '2022/04 ~ 現職',
+      'en': 'Apr 2022 ~ Dec 2022',
+      'zh-tw': '2022/04 ~ 2022/12',
     },
     'stern-position-content': {
       'en': 'Frontend Engineer',
@@ -143,7 +155,7 @@ export const translation = () => {
     <li class="list-item list-inside content-text">
       <span>Establish the development timeline.</span>
     </li>`,
-      'zh-tw': `<li class="list-item list-inside content-text.">
+      'zh-tw': `<li class="list-item list-inside content-text">
       <span>按照設計師給的畫面切版</span>
     </li>
     <li class="list-item list-inside content-text">
@@ -231,8 +243,8 @@ export const translation = () => {
       'zh-tw': '職稱',
     },
     'position-content': {
-      'en': 'Senior Frontend Engineer, Fullstack Engineer',
-      'zh-tw': '資深前端工程師、全端工程師',
+      'en': 'Senior Frontend Engineer',
+      'zh-tw': '資深前端工程師',
     },
     'place': {
       'en': 'Place',
