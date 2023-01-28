@@ -3548,8 +3548,8 @@ const translation = ()=>{
             "zh-tw": "廖晨竹"
         },
         "brief": {
-            "en": "I'm a Frontend engineer who loves JavaScript, TypeScript and CSS. I have almost 3 years work experience in web development. Outside of work, I am interested in learning open source like Vue, Vite, JQuery and so on. Additionally, I have experience in Testing(Jest, Vitest), Backend developing(Rest api, SQL, Mongo...) and also some DevOps skills like Docker, Github Action, AWS S3, EC2, etc.",
-            "zh-tw": "我是一個喜愛 JavaScript、TypeScript 還有 CSS 的前端工程師。我在網頁開發領域擁有將近 3 年的經驗。工作之餘，我的興趣是研究開源的專案，像是 Vue、Vite、JQuery...等等。另外我也有使用 Jest、Vitest 測試的經驗、後端 API 的開發、SQL、NoSQL 的使用，還有一些維運相關的技能，像是 Docker、Github Action、AWS 的 S3、Cloudfront 服務等等。"
+            "en": "I'm a Frontend engineer who loves JavaScript, TypeScript and CSS. I have almost 3 years work experience in web development. Outside of work, I am interested in learning open source like Vue, Vite, Qwik, JQuery and so on. Additionally, I have experience in Testing(Jest, Vitest), Backend developing(Rest api, SQL, Mongo...) and also some DevOps skills like Docker, Github Action, AWS S3, EC2, etc.",
+            "zh-tw": "我是一個喜愛 JavaScript、TypeScript 還有 CSS 的前端工程師。我在網頁開發領域擁有將近 3 年的經驗。工作之餘，我的興趣是研究開源的專案，像是 Vue、Vite、Qwik、JQuery...等等。另外我也有使用 Jest、Vitest 測試的經驗、後端 API 的開發、SQL、NoSQL 的使用，還有一些維運相關的技能，像是 Docker 、Github Action、AWS 的 S3、Cloudfront 服務等等。"
         },
         "export": {
             "en": "Download PDF",
@@ -3567,13 +3567,25 @@ const translation = ()=>{
             "en": "Work duties",
             "zh-tw": "工作內容"
         },
+        "swifteam": {
+            "en": "Swifteam(YC S20)",
+            "zh-tw": "Swifteam(YC S20)"
+        },
+        "swifteam-period-content": {
+            "en": "Jan 2023 ~ Present",
+            "zh-tw": "2023/01 ~ 現職"
+        },
+        "swifteam-position-content": {
+            "en": "Frontend Engineer(Fully Remote)",
+            "zh-tw": "前端工程師(遠端)"
+        },
         "stern": {
             "en": "Stern Information",
             "zh-tw": "思騰資訊"
         },
         "stern-period-content": {
-            "en": "Apr 2022 ~ Present",
-            "zh-tw": "2022/04 ~ 現職"
+            "en": "Apr 2022 ~ Dec 2022",
+            "zh-tw": "2022/04 ~ 2022/12"
         },
         "stern-position-content": {
             "en": "Frontend Engineer",
@@ -3666,7 +3678,7 @@ const translation = ()=>{
     <li class="list-item list-inside content-text">
       <span>Establish the development timeline.</span>
     </li>`,
-            "zh-tw": `<li class="list-item list-inside content-text.">
+            "zh-tw": `<li class="list-item list-inside content-text">
       <span>按照設計師給的畫面切版</span>
     </li>
     <li class="list-item list-inside content-text">
@@ -3754,8 +3766,8 @@ const translation = ()=>{
             "zh-tw": "職稱"
         },
         "position-content": {
-            "en": "Senior Frontend Engineer, Fullstack Engineer",
-            "zh-tw": "資深前端工程師、全端工程師"
+            "en": "Senior Frontend Engineer",
+            "zh-tw": "資深前端工程師"
         },
         "place": {
             "en": "Place",

@@ -1,1 +1,463 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="I'm a Frontend engineer who loves JavaScript, TypeScript and CSS. I have almost 3 years work experience in web development. Outside of work, I am interested in learning open source like Vue, Vite, Qwik, JQuery and so on. Additionally, I have experience in Testing(Jest, Vitest), Backend developing(Rest api, SQL, Mongo...) and also some DevOps skills like Docker, Github Action, AWS S3, EC2, etc."><meta property="og:url" content="https://resume.kurtstories.com/"><meta property="og:type" content="website"><meta property="og:title" content="Kurt's Resume"><meta property="og:description" content="I'm a Frontend engineer who loves JavaScript, TypeScript and CSS. I have almost 3 years work experience in web development. Outside of work, I am interested in learning open source like Vue, Vite, Qwik, JQuery and so on. Additionally, I have experience in Testing(Jest, Vitest), Backend developing(Rest api, SQL, Mongo...) and also some DevOps skills like Docker, Github Action, AWS S3, EC2, etc."><meta property="og:image" content="https://user-images.githubusercontent.com/32745146/201485377-d9fb9650-f27a-497c-bd54-90ce66aa58f5.png"><meta name="twitter:card" content="summary_large_image"><meta property="twitter:domain" content="resume.kurtstories.com"><meta property="twitter:url" content="https://resume.kurtstories.com/"><meta name="twitter:title" content="Kurt's Resume"><meta name="twitter:description" content="I'm a Frontend engineer who loves JavaScript, TypeScript and CSS. I have almost 3 years work experience in web development. Outside of work, I am interested in learning open source like Vue, Vite, Qwik, JQuery and so on. Additionally, I have experience in Testing(Jest, Vitest), Backend developing(Rest api, SQL, Mongo...) and also some DevOps skills like Docker, Github Action, AWS S3, EC2, etc."><meta name="twitter:image" content="https://user-images.githubusercontent.com/32745146/201485377-d9fb9650-f27a-497c-bd54-90ce66aa58f5.png"><title>Kurt's Resume</title><link rel="icon" type="image/x-icon" href="favicon.6d6ff7e3.ico"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet"><link rel="stylesheet" href="index.97be953c.css"><script defer src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script></head><body> <div id="root" x-data="components" class="flex h-screen items-center justify-center" x-init="setTimeout(() => {$store.system.isLoading = false;$store.system.firstInit();}, 4000)"> <template x-if="$store.system.isLoading"> <div x-html="spin.spin_template"></div> </template> <template x-if="!$store.system.isLoading"> <div id="app" x-data="components" class="bg-slate-200 h-full pb-20 pt-10 w-full"> <div class="flex flex-col gap-2 items-center justify-center md:flex-row"> <div class="switch-holder"> <div class="switch-label text-left"> <span class="uppercase" x-text="$store.locale.t('en')"></span> </div> <div class="switch-toggle"> <input type="checkbox" id="lang" x-model="$store.locale.lang"> <label for="lang"></label> </div> <div class="switch-label text-right"> <span class="uppercase" x-text="$store.locale.t('zh-tw')"></span> </div> </div> <div class="switch-holder"> <div class="switch-label text-left"> <span class="uppercase" x-text="$store.locale.t('resume')"></span> </div> <div class="switch-toggle"> <input type="checkbox" id="type" x-model="$store.system.type"> <label for="type"></label> </div> <div class="switch-label text-right"> <span class="uppercase" x-text="$store.locale.t('portfolio')"></span> </div> </div> </div> <template x-if="!$store.system.type"> <div id="resume" class="bg-white border-2 border-gray-200 flex flex-col gap-24 m-auto max-w-screen-lg md:gap-36 md:p-8 p-2" style="box-shadow:-1px 5px 35px -9px #0003" x-init="$store.system.initResume()"> <section id="intro">  <div class="flex items-center justify-between mb-10"> <h1 class="font-bold mb-8 text-6xl" x-text="$store.locale.t('name')"></h1> <img class="block h-full max-w-[150px] md:max-w-[250px] object-cover w-full" src="photo.1bd47891.png"> </div> <div class="mb-8 opacity-60 text-2xl text-left" x-text="$store.locale.t('brief')"></div> <div class="flex gap-8 justify-center"> <a href="https://github.com/kurt-liao" target="_blank" title="My Github" class="duration-700 external-link hover:rotate-[360deg] hover:scale-125 hover:text-[#8e7cc3] text-5xl transition-transform"> <iconify-icon icon="codicon:github-inverted"> </iconify-icon> </a> <a href="https://www.linkedin.com/in/kurt-liao-07360b17b/" target="_blank" title="My Linkedin" class="duration-700 external-link hover:rotate-[360deg] hover:scale-125 hover:text-[#0077b5] text-5xl transition-transform"> <iconify-icon icon="eva:linkedin-outline"> </iconify-icon> </a> <a href="mailto:vermouth0226@gmail.com" title="My Email" class="duration-700 external-link hover:rotate-[360deg] hover:scale-125 hover:text-[#c71610] text-5xl transition-transform"> <iconify-icon icon="carbon:email"> </iconify-icon> </a> <a href="https://me.kurtstories.com" target="_blank" title="My website" class="duration-700 external-link hover:rotate-[360deg] hover:scale-125 hover:text-[#44DC82] text-5xl transition-transform"> <iconify-icon icon="fluent-mdl2:web-environment"> </iconify-icon> </a> <a href="https://blog.kurtstories.com" target="_blank" title="My blog" class="duration-700 external-link hover:rotate-[360deg] hover:scale-125 hover:text-[#F54088] text-5xl transition-transform"> <iconify-icon icon="simple-icons:hugo"> </iconify-icon> </a> </div> </section> <section id="experience"> <h2 class="font-bold mb-8 text-4xl" x-text="$store.locale.t('experience')"></h2> <div class="stern"> <div class="title-block"> <p class="title" x-text="$store.locale.t('stern')"> </p> </div> <div class="content-block"> <p class="content-title" x-text="$store.locale.t('period')"></p> <p class="content-text" x-text="$store.locale.t('stern-period-content')"></p> </div> <div class="content-block"> <p class="content-title" x-text="$store.locale.t('position')"></p> <p class="content-text" x-text="$store.locale.t('stern-position-content')"></p> </div> <div class="content-block"> <p class="content-title" x-text="$store.locale.t('work-duties')"></p> <ul class="flex flex-col gap-2 list-plane" x-html="$store.locale.t('stern-work-duties-content')"> </ul> </div> <div class="content-block"> <p class="content-title flex-none" x-text="$store.locale.t('tech-stack')"></p> <ul class="flex flex-wrap gap-2"> <li class="bg-teal-600 tech-stack-tag">&lt;Vue&gt;</li> <li class="bg-emerald-500 tech-stack-tag">&lt;Vite&gt;</li> <li class="bg-indigo-700 tech-stack-tag">&lt;TypeScript&gt;</li> <li class="bg-green-500 tech-stack-tag">&lt;Nuxt&gt;</li> <li class="bg-yellow-300 tech-stack-tag">&lt;CSS / SCSS&gt;</li> <li class="bg-cyan-600 tech-stack-tag">&lt;Tailwindcss&gt;</li> <li class="bg-blue-500 tech-stack-tag">&lt;Element Plus&gt;</li> <li class="bg-blue-800 tech-stack-tag">&lt;MySQL&gt;</li> <li class="bg-lime-500 tech-stack-tag">&lt;MongoDB&gt;</li> <li class="bg-slate-700 tech-stack-tag">&lt;Git&gt;</li> <li class="bg-sky-700 tech-stack-tag">&lt;Docker&gt;</li> </ul> </div> </div> <div class="ilinke mt-8"> <div class="title-block"> <p class="title" x-text="$store.locale.t('ilinke')"> </p> </div> <div class="content-block"> <p class="content-title" x-text="$store.locale.t('period')"></p> <p class="content-text" x-text="$store.locale.t('ilinke-period-content')"></p> </div> <div class="content-block"> <p class="content-title" x-text="$store.locale.t('position')"></p> <p class="content-text" x-text="$store.locale.t('ilinke-position-content')"></p> </div> <div class="content-block"> <p class="content-title" x-text="$store.locale.t('work-duties')"></p> <ul class="flex flex-col gap-2 list-plane" x-html="$store.locale.t('ilinke-work-duties-content')"> </ul> </div> <div class="content-block"> <p class="content-title" x-text="$store.locale.t('project')"></p> <ul class="flex flex-col gap-2 list-plant"> <li class="content-text list-inside list-item"> <span x-text="$store.locale.t('jcolor')"> </span> <a class="hover:text-cyan-200 text-blue-400 underline" href="https://www.jcolor.com.tw/" x-text="$store.locale.t('link')" target="_blank"></a> </li> <li class="content-text list-inside list-item"> <span x-text="$store.locale.t('cupoy')"> </span> <a class="hover:text-cyan-200 text-blue-400 underline" href="https://www.cupoy.com/" x-text="$store.locale.t('link')" target="_blank"></a> </li> <li class="content-text list-inside list-item"> <span x-text="$store.locale.t('everprinter')"> </span> <a class="hover:text-cyan-200 text-blue-400 underline" href="https://everprinter.com/" x-text="$store.locale.t('link')" target="_blank"></a> </li> <li class="content-text list-inside list-item"> <span x-text="$store.locale.t('9199')"> </span> <a class="hover:text-cyan-200 text-blue-400 underline" href="https://www.9199.com.tw/" x-text="$store.locale.t('link')" target="_blank"></a> </li> </ul> </div> <div class="content-block"> <p class="content-title flex-none" x-text="$store.locale.t('tech-stack')"></p> <ul class="flex flex-wrap gap-2"> <li class="bg-blue-700 tech-stack-tag">&lt;React&gt;</li> <li class="bg-red-500 tech-stack-tag">&lt;AngularJS&gt;</li> <li class="bg-cyan-500 tech-stack-tag">&lt;Webpack&gt;</li> <li class="bg-indigo-700 tech-stack-tag">&lt;TypeScript&gt;</li> <li class="bg-yellow-300 tech-stack-tag">&lt;CSS / SCSS&gt;</li> <li class="bg-blue-400 tech-stack-tag">&lt;PostgreSQL&gt;</li> <li class="bg-amber-300 tech-stack-tag">&lt;Java&gt;</li> <li class="bg-lime-500 tech-stack-tag">&lt;MongoDB&gt;</li> <li class="bg-slate-700 tech-stack-tag">&lt;Git&gt;</li> <li class="bg-sky-700 tech-stack-tag">&lt;Docker&gt;</li> <li class="bg-orange-200 tech-stack-tag">&lt;AWS&gt;</li> </ul> </div> </div> </section> <section id="skills"> <h2 class="font-bold mb-8 text-4xl" x-text="$store.locale.t('skills')"></h2> <ul> <li class="skill-content"> <span>JavaScript</span> <div class="progress skill-bar"> <div data-bg="bg-yellow-400" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"> </div> </div> </li> <li class="skill-content"> <span>TypeScript</span> <div class="progress skill-bar"> <div data-bg="bg-indigo-700" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"> </div> </div> </li> <li class="skill-content"> <span>CSS / SCSS</span> <div class="progress skill-bar"> <div data-bg="bg-red-400" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"> </div> </div> </li> <li class="skill-content"> <span>Vue</span> <div class="progress skill-bar"> <div data-bg="bg-teal-600" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"> </div> </div> </li> <li class="skill-content"> <span>Vite</span> <div class="progress skill-bar"> <div data-bg="bg-emerald-500" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"> </div> </div> </li> <li class="skill-content"> <span>Nuxt</span> <div class="progress skill-bar"> <div data-bg="bg-green-300" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"> </div> </div> </li> <li class="skill-content"> <span>Tailwindcss</span> <div class="progress skill-bar"> <div data-bg="bg-cyan-600" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"> </div> </div> </li> <li class="skill-content"> <span>Git</span> <div class="progress skill-bar"> <div data-bg="bg-slate-700" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"> </div> </div> </li> <li class="skill-content"> <span>Docker</span> <div class="progress skill-bar"> <div data-bg="bg-sky-700" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"> </div> </div> </li> </ul> </section> <section id="education"> <h2 class="font-bold mb-8 text-4xl" x-text="$store.locale.t('education')"></h2> <div class="title-block"> <p class="title" x-text="$store.locale.t('college')"> </p> </div> <div class="content-block"> <p class="content-title" x-text="$store.locale.t('period')"></p> <p class="content-text" x-text="$store.locale.t('college-period-content')"></p> </div> <div class="content-block"> <p class="content-title" x-text="$store.locale.t('major')"></p> <p class="content-text" x-text="$store.locale.t('major-content')"></p> </div> <div class="content-block"> <p class="content-title" x-text="$store.locale.t('project')"></p> <ul class="flex flex-col gap-2 list-plant"> <li class="content-text list-inside list-item"> <span x-text="$store.locale.t('rabbit-fly')"> </span> <a class="hover:text-cyan-200 text-blue-400 underline" href="https://www.youtube.com/watch?v=v2C9MTq5AsI&t=7s&ab_channel=%E9%98%BF%E6%99%A8" x-text="$store.locale.t('video')" target="_blank"></a> </li> </ul> </div> </section> <section id="job-seeking"> <h2 class="font-bold mb-8 text-4xl" x-text="$store.locale.t('job-seeking')"></h2> <div class="content-block"> <p class="content-title" x-text="$store.locale.t('position')"></p> <p class="content-text" x-text="$store.locale.t('position-content')"></p> </div> <div class="content-block"> <p class="content-title" x-text="$store.locale.t('place')"></p> <p class="content-text" x-text="$store.locale.t('place-content')"></p> </div> </section> </div> </template> <template x-if="!$store.system.type"> <div class="bg-slate-600 bottom-0 fixed flex-col hidden justify-between opacity-50 p-4 py-10 text-white top-0 xl:flex"> <button class="cursor-pointer tooltip" @click="$store.utils.scrollTo('intro')"> <span class="tooltiptext" x-text="$store.locale.t('profile')"></span> <iconify-icon icon="cib:about-me" class="text-3xl"> </iconify-icon> </button> <button class="cursor-pointer tooltip" @click="$store.utils.scrollTo('experience')"> <span class="tooltiptext" x-text="$store.locale.t('experience')"></span> <iconify-icon icon="fluent-mdl2:work" class="text-3xl"> </iconify-icon> </button> <button class="cursor-pointer tooltip" @click="$store.utils.scrollTo('skills')"> <span class="tooltiptext" x-text="$store.locale.t('skills')"> text</span> <iconify-icon icon="carbon:skill-level-advanced" class="text-3xl"> </iconify-icon> </button> <button class="cursor-pointer tooltip" @click="$store.utils.scrollTo('education')"> <span class="tooltiptext" x-text="$store.locale.t('education')"></span> <iconify-icon icon="fluent-mdl2:education" class="text-3xl"> </iconify-icon> </button> <button class="cursor-pointer tooltip" @click="$store.utils.scrollTo('job-seeking')"> <span class="tooltiptext" x-text="$store.locale.t('job-seeking')"></span> <iconify-icon icon="cil:search" class="text-3xl"> </iconify-icon> </button> </div> </template> <template x-if="$store.system.type"> <div id="portfolio" class="p-8" x-init="$store.system.initPortfolio()"> <div class="flex flex-wrap gap-2 gap-y-12 justify-center"> <div class="aspect-[4/3] cursor-pointer lg:max-w-lg max-w-md" @click="$store.system.toggleModal($el)" data-key="kurt.me"> <div class="h-full overflow-hidden"> <img src="https://user-images.githubusercontent.com/32745146/198423735-d7615739-6317-4871-ba41-ddf139f7c0d7.png" class="blur-sm duration-700 h-full hover:blur-none hover:scale-125 object-cover transition-all w-full"> </div> <h2 class="cursor-initial font-bold text-2xl text-center">Kurt.me</h2> </div> <div class="aspect-[4/3] cursor-pointer lg:max-w-lg max-w-md" @click="$store.system.toggleModal($el)" data-key="movies"> <div class="h-full overflow-hidden"> <img src="https://user-images.githubusercontent.com/32745146/199554060-27b87788-baa9-46cd-9cb6-c34821a2c327.png" class="blur-sm duration-700 h-full hover:blur-none hover:scale-125 object-cover transition-all w-full"> </div> <h2 class="cursor-initial font-bold text-2xl text-center">Nuxt3 movies</h2> </div> <div class="aspect-[4/3] cursor-pointer lg:max-w-lg max-w-md" @click="$store.system.toggleModal($el)" data-key="kurt.blog"> <div class="h-full overflow-hidden"> <img src="https://user-images.githubusercontent.com/32745146/201956371-f540f662-9d67-4e4b-9a3b-a2205c2d79da.png" class="blur-sm duration-700 h-full hover:blur-none hover:scale-125 object-cover transition-all w-full"> </div> <h2 class="cursor-initial font-bold text-2xl text-center">Kurt Blog</h2> </div> <div class="aspect-[4/3] cursor-pointer lg:max-w-lg max-w-md" @click="$store.system.toggleModal($el)" data-key="travel-taiwan"> <div class="h-full overflow-hidden"> <img src="https://user-images.githubusercontent.com/32745146/202212412-cba23407-d7ee-48ac-88e2-7b100585c052.png" class="blur-sm duration-700 h-full hover:blur-none hover:scale-125 object-cover transition-all w-full"> </div> <h2 class="cursor-initial font-bold text-2xl text-center">Travel Taiwan</h2> </div> <div class="aspect-[4/3] cursor-pointer lg:max-w-lg max-w-md" @click="$store.system.toggleModal($el)" data-key="so-stats"> <div class="h-full overflow-hidden"> <img src="https://user-images.githubusercontent.com/32745146/202213942-a17e3bfa-7bf4-4786-a566-a4cd3e013d44.png" class="blur-sm duration-700 h-full hover:blur-none hover:scale-125 object-cover transition-all w-full"> </div> <h2 class="cursor-initial font-bold text-2xl text-center">SO Stats</h2> </div> <div class="aspect-[4/3] cursor-pointer lg:max-w-lg max-w-md" @click="$store.system.toggleModal($el)" data-key="medium-story"> <div class="h-full overflow-hidden"> <img src="https://user-images.githubusercontent.com/32745146/202214181-7156492e-f18f-4243-a9f8-5a174da3c0ca.png" class="blur-sm duration-700 h-full hover:blur-none hover:scale-125 object-cover transition-all w-full"> </div> <h2 class="cursor-initial font-bold text-2xl text-center">Medium Story</h2> </div> <div class="aspect-[4/3] cursor-pointer lg:max-w-lg max-w-md" @click="$store.system.toggleModal($el)" data-key="js-toys"> <div class="h-full overflow-hidden"> <img src="https://user-images.githubusercontent.com/32745146/202328644-178c0535-a6c9-4659-b2dd-0d87b4e46857.png" class="blur-sm duration-700 h-full hover:blur-none hover:scale-125 object-cover transition-all w-full"> </div> <h2 class="cursor-initial font-bold text-2xl text-center">JS Toys</h2> </div> <div class="aspect-[4/3] cursor-pointer lg:max-w-lg max-w-md" @click="$store.system.toggleModal($el)" data-key="start-nuxt3"> <div class="h-full overflow-hidden"> <img src="https://raw.githubusercontent.com/kurt-liao/start-nuxt3/main/assets/demo.png" class="blur-sm duration-700 h-full hover:blur-none hover:scale-125 object-cover transition-all w-full"> </div> <h2 class="cursor-initial font-bold text-2xl text-center">Start Nuxt3</h2> </div> </div> <div id="modal-container" @click="$store.system.toggleModal()"> <div class="absolute background bottom-0 left-0 right-0 top-0"></div> <div class="modal-background"> <div class="modal relative" @click="$event.stopPropagation()"> </div> </div> </div> </div> </template> </div> </template> </div> <script type="module" src="index.0a0ec630.js"></script> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="I'm a Frontend engineer who loves JavaScript, TypeScript and CSS. I have almost 3 years work experience in web development. Outside of work, I am interested in learning open source like Vue, Vite, Qwik, JQuery and so on. Additionally, I have experience in Testing(Jest, Vitest), Backend developing(Rest api, SQL, Mongo...) and also some DevOps skills like Docker, Github Action, AWS S3, EC2, etc.">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://resume.kurtstories.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kurt's Resume">
+  <meta property="og:description" content="I'm a Frontend engineer who loves JavaScript, TypeScript and CSS. I have almost 3 years work experience in web development. Outside of work, I am interested in learning open source like Vue, Vite, Qwik, JQuery and so on. Additionally, I have experience in Testing(Jest, Vitest), Backend developing(Rest api, SQL, Mongo...) and also some DevOps skills like Docker, Github Action, AWS S3, EC2, etc.">
+  <meta property="og:image" content="https://user-images.githubusercontent.com/32745146/201485377-d9fb9650-f27a-497c-bd54-90ce66aa58f5.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="resume.kurtstories.com">
+  <meta property="twitter:url" content="https://resume.kurtstories.com/">
+  <meta name="twitter:title" content="Kurt's Resume">
+  <meta name="twitter:description" content="I'm a Frontend engineer who loves JavaScript, TypeScript and CSS. I have almost 3 years work experience in web development. Outside of work, I am interested in learning open source like Vue, Vite, Qwik, JQuery and so on. Additionally, I have experience in Testing(Jest, Vitest), Backend developing(Rest api, SQL, Mongo...) and also some DevOps skills like Docker, Github Action, AWS S3, EC2, etc.">
+  <meta name="twitter:image" content="https://user-images.githubusercontent.com/32745146/201485377-d9fb9650-f27a-497c-bd54-90ce66aa58f5.png">
+
+	<title>Kurt's Resume</title>
+	<link rel="icon" type="image/x-icon" href="/favicon.956925d8.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/index.f7fa0e17.css"><script defer="" src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+</head>
+
+<body>
+	<div id="root" x-data="components" class="h-screen flex justify-center items-center" x-init="setTimeout(() => {$store.system.isLoading = false;$store.system.firstInit();}, 4000)">
+		<template x-if="$store.system.isLoading">
+			<div x-html="spin.spin_template"></div>
+		</template>
+		<template x-if="!$store.system.isLoading">
+			<div id="app" x-data="components" class="h-full w-full bg-slate-200 pb-20 pt-10">
+				<div class="flex flex-col md:flex-row justify-center items-center gap-2">
+					<div class="switch-holder">
+						<div class="switch-label text-left">
+							<span class="uppercase" x-text="$store.locale.t('en')"></span>
+						</div>
+						<div class="switch-toggle">
+							<input type="checkbox" id="lang" x-model="$store.locale.lang">
+							<label for="lang"></label>
+						</div>
+						<div class="switch-label text-right">
+							<span class="uppercase" x-text="$store.locale.t('zh-tw')"></span>
+						</div>
+					</div>
+					<div class="switch-holder">
+						<div class="switch-label text-left">
+							<span class="uppercase" x-text="$store.locale.t('resume')"></span>
+						</div>
+						<div class="switch-toggle">
+							<input type="checkbox" id="type" x-model="$store.system.type">
+							<label for="type"></label>
+						</div>
+						<div class="switch-label text-right">
+							<span class="uppercase" x-text="$store.locale.t('portfolio')"></span>
+						</div>
+					</div>
+				</div>
+
+				<template x-if="!$store.system.type">
+					<div id="resume" class="flex flex-col gap-24 md:gap-36 m-auto max-w-screen-lg border-2 border-gray-200 bg-white p-2 md:p-8" style="box-shadow: -1px 5px 35px -9px #0003" x-init="$store.system.initResume()">
+
+						<section id="intro">
+
+							<!-- <div class="flex justify-end mb-12">
+								<button @click="$store.utils.exportPdf()" class="text-2xl button bg-stone-500 hover:bg-blue-600"
+									x-text="$store.locale.t('export')"></button>
+							</div> -->
+
+							<div class="flex justify-between items-center mb-10">
+								<h1 class="text-6xl font-bold mb-8" x-text="$store.locale.t('name')"></h1>
+								<img class="max-w-[150px] md:max-w-[250px] block w-full h-full object-cover" src="/photo.9178d20c.png">
+							</div>
+							
+							<div class="text-left text-2xl mb-8 opacity-60" x-text="$store.locale.t('brief')"></div>
+
+							<div class="flex justify-center gap-8">
+								<a href="https://github.com/kurt-liao" target="_blank" title="My Github" class="external-link text-5xl hover:scale-125 hover:rotate-[360deg] transition-transform duration-700 hover:text-[#8e7cc3]">
+									<iconify-icon icon="codicon:github-inverted">
+									</iconify-icon>
+								</a>
+								<a href="https://www.linkedin.com/in/kurt-liao-07360b17b/" target="_blank" title="My Linkedin" class="external-link text-5xl hover:scale-125 hover:rotate-[360deg] transition-transform duration-700 hover:text-[#0077b5]">
+									<iconify-icon icon="eva:linkedin-outline">
+									</iconify-icon>
+								</a>
+								<a href="mailto:vermouth0226@gmail.com" title="My Email" class="external-link text-5xl hover:scale-125 hover:rotate-[360deg] transition-transform duration-700 hover:text-[#c71610]">
+									<iconify-icon icon="carbon:email">
+									</iconify-icon>
+								</a>
+								<a href="https://me.kurtstories.com" target="_blank" title="My website" class="external-link text-5xl hover:scale-125 hover:rotate-[360deg] transition-transform duration-700 hover:text-[#44DC82]">
+									<iconify-icon icon="fluent-mdl2:web-environment">
+									</iconify-icon>
+								</a>
+								<a href="https://blog.kurtstories.com" target="_blank" title="My blog" class="external-link text-5xl hover:scale-125 hover:rotate-[360deg] transition-transform duration-700 hover:text-[#F54088]">
+									<iconify-icon icon="simple-icons:hugo">
+									</iconify-icon>
+								</a>
+							</div>
+
+						</section>
+
+						<section id="experience">
+							<h2 class="text-4xl font-bold mb-8" x-text="$store.locale.t('experience')"></h2>
+
+							<div class="swifteam">
+								<div class="title-block">
+									<p class="title" x-text="$store.locale.t('swifteam')">
+									</p>
+								</div>
+								<div class="content-block">
+									<p class="content-title" x-text="$store.locale.t('period')"></p>
+									<p class="content-text" x-text="$store.locale.t('swifteam-period-content')"></p>
+								</div>
+								<div class="content-block">
+									<p class="content-title" x-text="$store.locale.t('position')"></p>
+									<p class="content-text" x-text="$store.locale.t('swifteam-position-content')"></p>
+								</div>
+								<!-- <div class="content-block">
+									<p class="content-title" x-text="$store.locale.t('work-duties')"></p>
+									<ul class="flex flex-col gap-2 list-plane" x-html="$store.locale.t('swifteam-work-duties-content')">
+									</ul>
+								</div> -->
+								<!-- <div class="content-block">
+									<p class="content-title flex-none" x-text="$store.locale.t('tech-stack')"></p>
+									<ul class="flex flex-wrap gap-2">
+										<li class="tech-stack-tag bg-teal-600">&lt;Vue&gt;</li>
+										<li class="tech-stack-tag bg-emerald-500">&lt;Vite&gt;</li>
+										<li class="tech-stack-tag bg-indigo-700">&lt;TypeScript&gt;</li>
+										<li class="tech-stack-tag bg-green-500">&lt;Nuxt&gt;</li>
+										<li class="tech-stack-tag bg-yellow-300">&lt;CSS / SCSS&gt;</li>
+										<li class="tech-stack-tag bg-cyan-600">&lt;Tailwindcss&gt;</li>
+										<li class="tech-stack-tag bg-blue-500">&lt;Element Plus&gt;</li>
+										<li class="tech-stack-tag bg-blue-800">&lt;MySQL&gt;</li>
+										<li class="tech-stack-tag bg-lime-500">&lt;MongoDB&gt;</li>
+										<li class="tech-stack-tag bg-slate-700">&lt;Git&gt;</li>
+										<li class="tech-stack-tag bg-sky-700">&lt;Docker&gt;</li>
+									</ul>
+								</div> -->
+							</div>
+
+							<div class="stern mt-8">
+								<div class="title-block">
+									<p class="title" x-text="$store.locale.t('stern')">
+									</p>
+								</div>
+								<div class="content-block">
+									<p class="content-title" x-text="$store.locale.t('period')"></p>
+									<p class="content-text" x-text="$store.locale.t('stern-period-content')"></p>
+								</div>
+								<div class="content-block">
+									<p class="content-title" x-text="$store.locale.t('position')"></p>
+									<p class="content-text" x-text="$store.locale.t('stern-position-content')"></p>
+								</div>
+								<div class="content-block">
+									<p class="content-title" x-text="$store.locale.t('work-duties')"></p>
+									<ul class="flex flex-col gap-2 list-plane" x-html="$store.locale.t('stern-work-duties-content')">
+									</ul>
+								</div>
+								<div class="content-block">
+									<p class="content-title flex-none" x-text="$store.locale.t('tech-stack')"></p>
+									<ul class="flex flex-wrap gap-2">
+										<li class="tech-stack-tag bg-teal-600">&lt;Vue&gt;</li>
+										<li class="tech-stack-tag bg-emerald-500">&lt;Vite&gt;</li>
+										<li class="tech-stack-tag bg-indigo-700">&lt;TypeScript&gt;</li>
+										<li class="tech-stack-tag bg-green-500">&lt;Nuxt&gt;</li>
+										<li class="tech-stack-tag bg-yellow-300">&lt;CSS / SCSS&gt;</li>
+										<li class="tech-stack-tag bg-cyan-600">&lt;Tailwindcss&gt;</li>
+										<li class="tech-stack-tag bg-blue-500">&lt;Element Plus&gt;</li>
+										<li class="tech-stack-tag bg-blue-800">&lt;MySQL&gt;</li>
+										<li class="tech-stack-tag bg-lime-500">&lt;MongoDB&gt;</li>
+										<li class="tech-stack-tag bg-slate-700">&lt;Git&gt;</li>
+										<li class="tech-stack-tag bg-sky-700">&lt;Docker&gt;</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="ilinke mt-8">
+								<div class="title-block">
+									<p class="title" x-text="$store.locale.t('ilinke')">
+									</p>
+								</div>
+								<div class="content-block">
+									<p class="content-title" x-text="$store.locale.t('period')"></p>
+									<p class="content-text" x-text="$store.locale.t('ilinke-period-content')"></p>
+								</div>
+								<div class="content-block">
+									<p class="content-title" x-text="$store.locale.t('position')"></p>
+									<p class="content-text" x-text="$store.locale.t('ilinke-position-content')"></p>
+								</div>
+								<div class="content-block">
+									<p class="content-title" x-text="$store.locale.t('work-duties')"></p>
+									<ul class="flex flex-col gap-2 list-plane" x-html="$store.locale.t('ilinke-work-duties-content')">
+									</ul>
+								</div>
+								<div class="content-block">
+									<p class="content-title" x-text="$store.locale.t('project')"></p>
+									<ul class="flex flex-col gap-2 list-plant">
+										<li class="list-item list-inside content-text">
+											<span x-text="$store.locale.t('jcolor')">
+											</span>
+											<a class="text-blue-400 underline hover:text-cyan-200" href="https://www.jcolor.com.tw/" x-text="$store.locale.t('link')" target="_blank"></a>
+										</li>
+										<li class="list-item list-inside content-text">
+											<span x-text="$store.locale.t('cupoy')">
+											</span>
+											<a class="text-blue-400 underline hover:text-cyan-200" href="https://www.cupoy.com/" x-text="$store.locale.t('link')" target="_blank"></a>
+										</li>
+										<li class="list-item list-inside content-text">
+											<span x-text="$store.locale.t('everprinter')">
+											</span>
+											<a class="text-blue-400 underline hover:text-cyan-200" href="https://everprinter.com/" x-text="$store.locale.t('link')" target="_blank"></a>
+										</li>
+										<li class="list-item list-inside content-text">
+											<span x-text="$store.locale.t('9199')">
+											</span>
+											<a class="text-blue-400 underline hover:text-cyan-200" href="https://www.9199.com.tw/" x-text="$store.locale.t('link')" target="_blank"></a>
+										</li>
+									</ul>
+								</div>
+								<div class="content-block">
+									<p class="content-title flex-none" x-text="$store.locale.t('tech-stack')"></p>
+									<ul class="flex flex-wrap gap-2">
+										<li class="tech-stack-tag bg-blue-700">&lt;React&gt;</li>
+										<li class="tech-stack-tag bg-red-500">&lt;AngularJS&gt;</li>
+										<li class="tech-stack-tag bg-cyan-500">&lt;Webpack&gt;</li>
+										<li class="tech-stack-tag bg-indigo-700">&lt;TypeScript&gt;</li>
+										<li class="tech-stack-tag bg-yellow-300">&lt;CSS / SCSS&gt;</li>
+										<li class="tech-stack-tag bg-blue-400">&lt;PostgreSQL&gt;</li>
+										<li class="tech-stack-tag bg-amber-300">&lt;Java&gt;</li>
+										<li class="tech-stack-tag bg-lime-500">&lt;MongoDB&gt;</li>
+										<li class="tech-stack-tag bg-slate-700">&lt;Git&gt;</li>
+										<li class="tech-stack-tag bg-sky-700">&lt;Docker&gt;</li>
+										<li class="tech-stack-tag bg-orange-200">&lt;AWS&gt;</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section id="skills">
+							<h2 class="text-4xl font-bold mb-8" x-text="$store.locale.t('skills')"></h2>
+							<ul>
+								<li class="skill-content">
+									<span>JavaScript</span>
+									<div class="progress skill-bar ">
+										<div data-bg="bg-yellow-400" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+										</div>
+									</div>
+								</li>
+								<li class="skill-content">
+									<span>TypeScript</span>
+									<div class="progress skill-bar ">
+										<div data-bg="bg-indigo-700" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+										</div>
+									</div>
+								</li>
+								<li class="skill-content">
+									<span>CSS / SCSS</span>
+									<div class="progress skill-bar ">
+										<div data-bg="bg-red-400" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+										</div>
+									</div>
+								</li>
+								<li class="skill-content">
+									<span>Vue</span>
+									<div class="progress skill-bar ">
+										<div data-bg="bg-teal-600" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+										</div>
+									</div>
+								</li>
+								<li class="skill-content">
+									<span>Vite</span>
+									<div class="progress skill-bar ">
+										<div data-bg="bg-emerald-500" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+										</div>
+									</div>
+								</li>
+								<li class="skill-content">
+									<span>Nuxt</span>
+									<div class="progress skill-bar ">
+										<div data-bg="bg-green-300" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+										</div>
+									</div>
+								</li>
+								<li class="skill-content">
+									<span>Tailwindcss</span>
+									<div class="progress skill-bar ">
+										<div data-bg="bg-cyan-600" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+										</div>
+									</div>
+								</li>
+								<li class="skill-content">
+									<span>Git</span>
+									<div class="progress skill-bar ">
+										<div data-bg="bg-slate-700" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+										</div>
+									</div>
+								</li>
+								<li class="skill-content">
+									<span>Docker</span>
+									<div class="progress skill-bar ">
+										<div data-bg="bg-sky-700" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+										</div>
+									</div>
+								</li>
+							</ul>
+						</section>
+
+						<section id="education">
+							<h2 class="text-4xl font-bold mb-8" x-text="$store.locale.t('education')"></h2>
+							<div class="title-block">
+								<p class="title" x-text="$store.locale.t('college')">
+								</p>
+							</div>
+							<div class="content-block">
+								<p class="content-title" x-text="$store.locale.t('period')"></p>
+								<p class="content-text" x-text="$store.locale.t('college-period-content')"></p>
+							</div>
+							<div class="content-block">
+								<p class="content-title" x-text="$store.locale.t('major')"></p>
+								<p class="content-text" x-text="$store.locale.t('major-content')"></p>
+							</div>
+							<div class="content-block">
+								<p class="content-title" x-text="$store.locale.t('project')"></p>
+								<ul class="flex flex-col gap-2 list-plant">
+									<li class="list-item list-inside content-text">
+										<span x-text="$store.locale.t('rabbit-fly')">
+										</span>
+										<a class="text-blue-400 underline hover:text-cyan-200" href="https://www.youtube.com/watch?v=v2C9MTq5AsI&t=7s&ab_channel=%E9%98%BF%E6%99%A8" x-text="$store.locale.t('video')" target="_blank"></a>
+									</li>
+								</ul>
+							</div>
+						</section>
+
+						<section id="job-seeking">
+							<h2 class="text-4xl font-bold mb-8" x-text="$store.locale.t('job-seeking')"></h2>
+
+							<div class="content-block">
+								<p class="content-title" x-text="$store.locale.t('position')"></p>
+								<p class="content-text" x-text="$store.locale.t('position-content')"></p>
+							</div>
+
+							<div class="content-block">
+								<p class="content-title" x-text="$store.locale.t('place')"></p>
+								<p class="content-text" x-text="$store.locale.t('place-content')"></p>
+							</div>
+						</section>
+					</div>
+				</template>
+
+				<template x-if="!$store.system.type">
+					<div class="hidden xl:flex fixed top-0 bottom-0 opacity-50 text-white bg-slate-600 flex-col justify-between p-4 py-10">
+						<button class="tooltip cursor-pointer" @click="$store.utils.scrollTo('intro')">
+							<span class="tooltiptext" x-text="$store.locale.t('profile')"></span>
+							<iconify-icon icon="cib:about-me" class="text-3xl">
+							</iconify-icon>
+						</button>
+						<button class="tooltip cursor-pointer" @click="$store.utils.scrollTo('experience')">
+							<span class="tooltiptext" x-text="$store.locale.t('experience')"></span>
+							<iconify-icon icon="fluent-mdl2:work" class="text-3xl">
+							</iconify-icon>
+						</button>
+						<button class="tooltip cursor-pointer" @click="$store.utils.scrollTo('skills')">
+							<span class="tooltiptext" x-text="$store.locale.t('skills')">
+								text</span>
+							<iconify-icon icon="carbon:skill-level-advanced" class="text-3xl">
+							</iconify-icon>
+						</button>
+						<button class="tooltip cursor-pointer" @click="$store.utils.scrollTo('education')">
+							<span class="tooltiptext" x-text="$store.locale.t('education')"></span>
+							<iconify-icon icon="fluent-mdl2:education" class="text-3xl">
+							</iconify-icon>
+						</button>
+						<button class="tooltip cursor-pointer" @click="$store.utils.scrollTo('job-seeking')">
+							<span class="tooltiptext" x-text="$store.locale.t('job-seeking')"></span>
+							<iconify-icon icon="cil:search" class="text-3xl">
+							</iconify-icon>
+						</button>
+					</div>
+				</template>
+
+				<template x-if="$store.system.type">
+					<div id="portfolio" class="p-8" x-init="$store.system.initPortfolio()">
+						<div class="flex flex-wrap justify-center gap-2 gap-y-12">
+							<div class="max-w-md lg:max-w-lg cursor-pointer aspect-[4/3]" @click="$store.system.toggleModal($el)" data-key="kurt.me">
+								<div class="h-full overflow-hidden">
+									<img src="https://user-images.githubusercontent.com/32745146/198423735-d7615739-6317-4871-ba41-ddf139f7c0d7.png" class="blur-sm w-full h-full object-cover hover:blur-none hover:scale-125 transition-all duration-700">
+								</div>
+								<h2 class="text-center font-bold text-2xl cursor-initial">Kurt.me</h2>
+							</div>
+
+							<div class="max-w-md lg:max-w-lg cursor-pointer aspect-[4/3]" @click="$store.system.toggleModal($el)" data-key="movies">
+								<div class="h-full overflow-hidden">
+									<img src="https://user-images.githubusercontent.com/32745146/199554060-27b87788-baa9-46cd-9cb6-c34821a2c327.png" class="blur-sm w-full h-full object-cover hover:blur-none hover:scale-125 transition-all duration-700">
+								</div>
+								<h2 class="text-center font-bold text-2xl cursor-initial">Nuxt3 movies</h2>
+							</div>
+
+							<div class="max-w-md lg:max-w-lg cursor-pointer aspect-[4/3]" @click="$store.system.toggleModal($el)" data-key="kurt.blog">
+								<div class="h-full overflow-hidden">
+									<img src="https://user-images.githubusercontent.com/32745146/201956371-f540f662-9d67-4e4b-9a3b-a2205c2d79da.png" class="blur-sm w-full h-full object-cover hover:blur-none hover:scale-125 transition-all duration-700">
+								</div>
+								<h2 class="text-center font-bold text-2xl cursor-initial">Kurt Blog</h2>
+							</div>
+
+							<div class="max-w-md lg:max-w-lg cursor-pointer aspect-[4/3]" @click="$store.system.toggleModal($el)" data-key="travel-taiwan">
+								<div class="h-full overflow-hidden">
+									<img src="https://user-images.githubusercontent.com/32745146/202212412-cba23407-d7ee-48ac-88e2-7b100585c052.png" class="blur-sm w-full h-full object-cover hover:blur-none hover:scale-125 transition-all duration-700">
+								</div>
+								<h2 class="text-center font-bold text-2xl cursor-initial">Travel Taiwan</h2>
+							</div>
+
+							<div class="max-w-md lg:max-w-lg cursor-pointer aspect-[4/3]" @click="$store.system.toggleModal($el)" data-key="so-stats">
+								<div class="h-full overflow-hidden">
+									<img src="https://user-images.githubusercontent.com/32745146/202213942-a17e3bfa-7bf4-4786-a566-a4cd3e013d44.png" class="blur-sm w-full h-full object-cover hover:blur-none hover:scale-125 transition-all duration-700">
+								</div>
+								<h2 class="text-center font-bold text-2xl cursor-initial">SO Stats</h2>
+							</div>
+
+							<div class="max-w-md lg:max-w-lg cursor-pointer aspect-[4/3]" @click="$store.system.toggleModal($el)" data-key="medium-story">
+								<div class="h-full overflow-hidden">
+									<img src="https://user-images.githubusercontent.com/32745146/202214181-7156492e-f18f-4243-a9f8-5a174da3c0ca.png" class="blur-sm w-full h-full object-cover hover:blur-none hover:scale-125 transition-all duration-700">
+								</div>
+								<h2 class="text-center font-bold text-2xl cursor-initial">Medium Story</h2>
+							</div>
+
+							<div class="max-w-md lg:max-w-lg cursor-pointer aspect-[4/3]" @click="$store.system.toggleModal($el)" data-key="js-toys">
+								<div class="h-full overflow-hidden">
+									<img src="https://user-images.githubusercontent.com/32745146/202328644-178c0535-a6c9-4659-b2dd-0d87b4e46857.png" class="blur-sm w-full h-full object-cover hover:blur-none hover:scale-125 transition-all duration-700">
+								</div>
+								<h2 class="text-center font-bold text-2xl cursor-initial">JS Toys</h2>
+							</div>
+
+							<div class="max-w-md lg:max-w-lg cursor-pointer aspect-[4/3]" @click="$store.system.toggleModal($el)" data-key="start-nuxt3">
+								<div class="h-full overflow-hidden">
+									<img src="https://raw.githubusercontent.com/kurt-liao/start-nuxt3/main/assets/demo.png" class="blur-sm w-full h-full object-cover hover:blur-none hover:scale-125 transition-all duration-700">
+								</div>
+								<h2 class="text-center font-bold text-2xl cursor-initial">Start Nuxt3</h2>
+							</div>
+						</div>
+
+						<div id="modal-container" @click="$store.system.toggleModal()">
+							<div class="background absolute top-0 bottom-0 left-0 right-0"></div>
+							<div class="modal-background">
+								<div class="modal relative" @click="$event.stopPropagation()">
+								</div>
+							</div>
+						</div>
+					</div>
+				</template>
+			</div>
+		</template>
+	</div>
+	<script src="/index.6b815632.js" defer=""></script>
+</body>
+
+</html>
