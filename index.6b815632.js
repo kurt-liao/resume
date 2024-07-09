@@ -3548,8 +3548,8 @@ const translation = ()=>{
             "zh-tw": "廖晨竹"
         },
         "brief": {
-            "en": "I'm a Frontend engineer who loves JavaScript, TypeScript and CSS. I have almost 3 years work experience in web development. Outside of work, I am interested in learning open source like Vue, Vite, Qwik, JQuery and so on. Additionally, I have experience in Testing(Jest, Vitest), Backend developing(Rest api, SQL, Mongo...) and also some DevOps skills like Docker, Github Action, AWS S3, EC2, etc.",
-            "zh-tw": "我是一個喜愛 JavaScript、TypeScript 還有 CSS 的前端工程師。我在網頁開發領域擁有將近 3 年的經驗。工作之餘，我的興趣是研究開源的專案，像是 Vue、Vite、Qwik、JQuery...等等。另外我也有使用 Jest、Vitest 測試的經驗、後端 API 的開發、SQL、NoSQL 的使用，還有一些維運相關的技能，像是 Docker 、Github Action、AWS 的 S3、Cloudfront 服務等等。"
+            "en": "I'm a Frontend engineer who loves JavaScript, TypeScript and CSS. I have over 4 years work experience in web development. Outside of work, I am interested in learning open source like Vue, Vite, Qwik and so on. Additionally, I have experience in Testing(Jest, Vitest), Backend developing(Rest api, SQL, Mongo...) and also some DevOps skills like Docker, Github Action, AWS S3, EC2.",
+            "zh-tw": "我是一個喜愛 JavaScript、TypeScript 還有 CSS 的前端工程師。我在網頁開發領域擁有超過 4 年的經驗。工作之餘，我的興趣是研究開源的專案，像是 Vue、Vite、Qwik...等等。另外我也有使用 Jest、Vitest 測試的經驗、後端 API 的開發、SQL、NoSQL 的使用，還有一些維運相關的技能，像是 Docker 、Github Action、AWS 的 S3、Cloudfront 服務。"
         },
         "export": {
             "en": "Download PDF",
@@ -3633,6 +3633,38 @@ const translation = ()=>{
     </li>
     <li class="list-item list-inside content-text">
       <span>開發時程掌控</span>
+    </li>`
+        },
+        "swifteam-work-duties-content": {
+            "en": `<li class="list-item list-inside content-text">
+      <span>Figma/PSD to HTML,CSS.</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Integrate backend api(Rest, GraphQL).</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Integrate 3rd party applications.</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Chrome extension development.</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Desktop app development with Flutter(macOS, Windows).</span>
+    </li>`,
+            "zh-tw": `<li class="list-item list-inside content-text">
+      <span>按照設計師給的畫面切版</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Rest API, GraphQL API 串接</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>第三方服務串接</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Chrome 插件開發</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>使用 Flutter 開發 macOS, Windows 桌面程式</span>
     </li>`
         },
         "ilinke": {
@@ -3817,8 +3849,8 @@ exports.default = function() {
 };
 
 },{"html2pdf.js":"at6i8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"at6i8":[function(require,module,exports) {
-var global = arguments[3];
 var process = require("process");
+var global = arguments[3];
 /*!
  * html2pdf.js v0.10.1
  * Copyright (c) 2021 Erik Koopmans
@@ -15204,14 +15236,14 @@ var Ut, zt, Ht, Wt = [
     }, t.loadImageFile = t.loadFile;
 }(E.API), function(e) {
     function r() {
-        return (n.html2canvas ? Promise.resolve(n.html2canvas) : require("4264a2d0820bdc6b")).catch(function(t) {
+        return (n.html2canvas ? Promise.resolve(n.html2canvas) : require("9c5bb44dd929655d")).catch(function(t) {
             return Promise.reject(new Error("Could not load html2canvas: " + t));
         }).then(function(t) {
             return t.default ? t.default : t;
         });
     }
     function i() {
-        return (n.DOMPurify ? Promise.resolve(n.DOMPurify) : require("a8b7c0b1dbecc6f1")).catch(function(t) {
+        return (n.DOMPurify ? Promise.resolve(n.DOMPurify) : require("60226a2ac8017f09")).catch(function(t) {
             return Promise.reject(new Error("Could not load dompurify: " + t));
         }).then(function(t) {
             return t.default ? t.default : t;
@@ -24425,7 +24457,7 @@ function ee(t) {
  * ====================================================================
  */ function(t) {
     function e() {
-        return (n.canvg ? Promise.resolve(n.canvg) : require("9967725f8446186d")).catch(function(t) {
+        return (n.canvg ? Promise.resolve(n.canvg) : require("7f01520b649eaee2")).catch(function(t) {
             return Promise.reject(new Error("Could not load canvg: " + t));
         }).then(function(t) {
             return t.default ? t.default : t;
@@ -27725,7 +27757,7 @@ E.API.PDFObject = function() {
 }();
 exports.default = E;
 
-},{"@babel/runtime/helpers/typeof":"jgQjt","fflate":"61VnC","4264a2d0820bdc6b":"26NyR","a8b7c0b1dbecc6f1":"gaY4x","9967725f8446186d":"b8n7c","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jgQjt":[function(require,module,exports) {
+},{"@babel/runtime/helpers/typeof":"jgQjt","fflate":"61VnC","9c5bb44dd929655d":"26NyR","60226a2ac8017f09":"gaY4x","7f01520b649eaee2":"b8n7c","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jgQjt":[function(require,module,exports) {
 function _typeof(obj) {
     "@babel/helpers - typeof";
     return module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(obj) {
