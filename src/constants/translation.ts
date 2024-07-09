@@ -25,8 +25,8 @@ export const translation = () => {
       'zh-tw': '廖晨竹',
     },
     'brief': {
-      'en': 'I\'m a Frontend engineer who loves JavaScript, TypeScript and CSS. I have almost 3 years work experience in web development. Outside of work, I am interested in learning open source like Vue, Vite, Qwik, JQuery and so on. Additionally, I have experience in Testing(Jest, Vitest), Backend developing(Rest api, SQL, Mongo...) and also some DevOps skills like Docker, Github Action, AWS S3, EC2, etc.',
-      'zh-tw': '我是一個喜愛 JavaScript、TypeScript 還有 CSS 的前端工程師。我在網頁開發領域擁有將近 3 年的經驗。工作之餘，我的興趣是研究開源的專案，像是 Vue、Vite、Qwik、JQuery...等等。另外我也有使用 Jest、Vitest 測試的經驗、後端 API 的開發、SQL、NoSQL 的使用，還有一些維運相關的技能，像是 Docker 、Github Action、AWS 的 S3、Cloudfront 服務等等。',
+      'en': 'I\'m a Frontend engineer who loves JavaScript, TypeScript and CSS. I have over 4 years work experience in web development. Outside of work, I am interested in learning open source like Vue, Vite, Qwik and so on. Additionally, I have experience in Testing(Jest, Vitest), Backend developing(Rest api, SQL, Mongo...) and also some DevOps skills like Docker, Github Action, AWS S3, EC2.',
+      'zh-tw': '我是一個喜愛 JavaScript、TypeScript 還有 CSS 的前端工程師。我在網頁開發領域擁有超過 4 年的經驗。工作之餘，我的興趣是研究開源的專案，像是 Vue、Vite、Qwik...等等。另外我也有使用 Jest、Vitest 測試的經驗、後端 API 的開發、SQL、NoSQL 的使用，還有一些維運相關的技能，像是 Docker 、Github Action、AWS 的 S3、Cloudfront 服務。',
     },
     'export': {
       'en': 'Download PDF',
@@ -110,6 +110,38 @@ export const translation = () => {
     </li>
     <li class="list-item list-inside content-text">
       <span>開發時程掌控</span>
+    </li>`,
+    },
+    'swifteam-work-duties-content': {
+      'en': `<li class="list-item list-inside content-text">
+      <span>Figma/PSD to HTML,CSS.</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Integrate backend api(Rest, GraphQL).</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Integrate 3rd party applications.</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Chrome extension development.</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Desktop app development with Flutter(macOS, Windows).</span>
+    </li>`,
+      'zh-tw': `<li class="list-item list-inside content-text">
+      <span>按照設計師給的畫面切版</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Rest API, GraphQL API 串接</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>第三方服務串接</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>Chrome 插件開發</span>
+    </li>
+    <li class="list-item list-inside content-text">
+      <span>使用 Flutter 開發 macOS, Windows 桌面程式</span>
     </li>`,
     },
     'ilinke': {
