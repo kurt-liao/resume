@@ -45,8 +45,8 @@ export const translation = () => {
       'zh-tw': '工作內容',
     },
     'swifteam': {
-      'en': 'Swifteam(YC S20)',
-      'zh-tw': 'Swifteam(YC S20)',
+      'en': 'Swif(YC S20)',
+      'zh-tw': 'Swif(YC S20)',
     },
     'swifteam-period-content': {
       'en': 'Jan 2023 ~ Present',
