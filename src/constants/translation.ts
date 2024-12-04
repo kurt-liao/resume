@@ -25,8 +25,8 @@ export const translation = () => {
       'zh-tw': '廖晨竹',
     },
     'brief': {
-      'en': 'I\'m a Frontend engineer who loves JavaScript, TypeScript and CSS. I have over 4 years work experience in web development. Outside of work, I am interested in learning open source like Vue, Vite, Qwik and so on. Additionally, I have experience in Testing(Jest, Vitest), Backend developing(Rest api, SQL, Mongo...) and also some DevOps skills like Docker, Github Action, AWS S3, EC2.',
-      'zh-tw': '我是一個喜愛 JavaScript、TypeScript 還有 CSS 的前端工程師。我在網頁開發領域擁有超過 4 年的經驗。工作之餘，我的興趣是研究開源的專案，像是 Vue、Vite、Qwik...等等。另外我也有使用 Jest、Vitest 測試的經驗、後端 API 的開發、SQL、NoSQL 的使用，還有一些維運相關的技能，像是 Docker 、Github Action、AWS 的 S3、Cloudfront 服務。',
+      'en': 'I\'m a Frontend engineer. I have over 4 years of work experience in web development. I have extensive experience building products from 0 to 1 and maintaining and improving numerous existing projects. I primarily work with Vue 3 in my current job but also have experience with other frameworks, such as React and AngularJS. Outside of work, I am interested in learning open source like Vue and Qwik and creating tools or websites as my side projects.',
+      'zh-tw': '我是前端工程師，擁有超過四年的網頁開發工作經驗。對於從零到一打造產品有豐富的實戰經驗，同時也曾維護並優化多個現有專案。目前的工作主要使用 Vue 3，但也具備使用其他框架（如 React 和 AngularJS）的經驗。工作之外，我對學習開源項目（如 Vue 和 Qwik）很有興趣，也熱衷於開發工具或網站作為我的 side projects。',
     },
     'export': {
       'en': 'Download PDF',
@@ -45,8 +45,8 @@ export const translation = () => {
       'zh-tw': '工作內容',
     },
     'swifteam': {
-      'en': 'Swif(YC S20)',
-      'zh-tw': 'Swif(YC S20)',
+      'en': 'Swif.ai(YC S20)',
+      'zh-tw': 'Swif.ai(YC S20)',
     },
     'swifteam-period-content': {
       'en': 'Jan 2023 ~ Present',
@@ -70,78 +70,54 @@ export const translation = () => {
     },
     'stern-work-duties-content': {
       'en': `<li class="list-item list-inside content-text">
-      <span>Figma/PSD to HTML,CSS.</span>
+      <span>Worked with design to create an educational web product for schools in Taiwan.</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>Design and Integrate backend api.</span>
+      <span>Migrate the existing Vue2 code‐based project to Vue3.</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>Integrate 3rd party payment.</span>
+      <span>Integrate 3rd party payment service.</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>Database design.</span>
-    </li>
-    <li class="list-item list-inside content-text">
-      <span>Development environment setup.</span>
-    </li>
-    <li class="list-item list-inside content-text">
-      <span>Unit testing & End-to-end testing.</span>
-    </li>
-    <li class="list-item list-inside content-text">
-      <span>Establish the development timeline.</span>
+      <span>Edu‐app development with Flutter(Android, iOS).</span>
     </li>`,
       'zh-tw': `<li class="list-item list-inside content-text">
-      <span>按照設計師給的畫面切版</span>
+      <span>與設計團隊合作，為台灣的國中小開發學校管理平台網站。</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>API 撰寫 / 串接</span>
+      <span>將現有基於 Vue2 的專案遷移至 Vue3。</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>第三方服務串接(金流)</span>
+      <span>整合第三方支付服務。</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>資料庫設計</span>
-    </li>
-    <li class="list-item list-inside content-text">
-      <span>Docker 開發環境建置</span>
-    </li>
-    <li class="list-item list-inside content-text">
-      <span>單元測試 & End-to-end 測試</span>
-    </li>
-    <li class="list-item list-inside content-text">
-      <span>開發時程掌控</span>
+      <span>使用 Flutter 開發教育應用程式（支援 Android 和 iOS）。</span>
     </li>`,
     },
     'swifteam-work-duties-content': {
       'en': `<li class="list-item list-inside content-text">
-      <span>Figma/PSD to HTML,CSS.</span>
+      <span>Work with design and backend teams to create the MDM‐related dashboard website for organizations.</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>Integrate backend api(Rest, GraphQL).</span>
+      <span>Integrate 3rd party services, e.g., Stripe, Segment, Intercom.</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>Integrate 3rd party applications.</span>
+      <span>Develop the Chrome extension for Shadow IT.</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>Chrome extension development.</span>
-    </li>
-    <li class="list-item list-inside content-text">
-      <span>Desktop app development with Flutter(macOS, Windows).</span>
+      <span>Develop the Desktop app for self‐service software installation using Flutter.</span>
     </li>`,
       'zh-tw': `<li class="list-item list-inside content-text">
-      <span>按照設計師給的畫面切版</span>
+      <span>與設計和後端團隊合作，打造與 MDM 相關的平台提供許多公司使用。</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>Rest API, GraphQL API 串接</span>
+      <span>整合第三方服務，例如 Stripe、Segment、Intercom。</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>第三方服務串接</span>
+      <span>開發用於 Shadow IT 的 Chrome 擴展程式。</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>Chrome 插件開發</span>
-    </li>
-    <li class="list-item list-inside content-text">
-      <span>使用 Flutter 開發 macOS, Windows 桌面程式</span>
+      <span>使用 Flutter 開發用於自助軟體安裝的桌面應用程式。</span>
     </li>`,
     },
     'ilinke': {
@@ -158,64 +134,37 @@ export const translation = () => {
     },
     'ilinke-work-duties-content': {
       'en': `<li class="list-item list-inside content-text">
-      <span>Figma/PSD to HTML,CSS.</span>
+      <span>Develop and maintain four e‐commerce websites.</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>Maintain and Improve the website.</span>
+      <span>Optimize SEO and speed of the website.</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>Develop mobile app using react native webview.</span>
+      <span>Integrate 3rd party services, e.g., payment, logistics, Google GA, Google Login.</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>Design and integrate backend API.</span>
+      <span>Optimize SEO and speed of the website.</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>Integrate 3rd party payment, logistics, google ga, google login, etc.</span>
-    </li>
-    <li class="list-item list-inside content-text">
-      <span>Optimize application like SEO, speed of website, etc.</span>
+      <span>Mobile app development with React Native (Android, iOS).</span>
     </li>
     <li class="list-item list-inside content-text">
       <span>Deploy to AWS with EC2, S3, Cloudfront, Route53.</span>
-    </li>
-    <li class="list-item list-inside content-text">
-      <span>Deploy mobile app to play store & app store.</span>
-    </li>
-    <li class="list-item list-inside content-text">
-      <span>Unit testing & End-to-end testing.</span>
-    </li>
-    <li class="list-item list-inside content-text">
-      <span>Establish the development timeline.</span>
     </li>`,
       'zh-tw': `<li class="list-item list-inside content-text">
-      <span>按照設計師給的畫面切版</span>
+      <span>開發並維護四個不同的電商網站。</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>開發新專案、維護既有專案</span>
+      <span>整合第三方服務，例如支付、物流、Google GA、Google 登入。</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>使用 React Native Webview 開發手機 APP</span>
+      <span>優化網站的 SEO 和加載速度。</span>
     </li>
     <li class="list-item list-inside content-text">
-      <span>設計 / 串接後端 API</span>
-    </li>
-    <li class="list-item list-inside content-text">
-      <span>第三方服務串接，如：金流、物流、Google GA、Google 登入...等等</span>
-    </li>
-    <li class="list-item list-inside content-text">
-      <span>優化網站，如：SEO、網站速度</span>
+      <span>使用 React Native 開發手機應用程式（支援 Android 和 iOS）。</span>
     </li>
     <li class="list-item list-inside content-text">
       <span>部署專案至 AWS，使用到的服務有 EC2、S3、Cloudfront、Route53</span>
-    </li>
-    <li class="list-item list-inside content-text">
-      <span>部署 APP 至 Play Store & App Store</span>
-    </li>
-    <li class="list-item list-inside content-text">
-      <span>單元測試 & End-to-end 測試</span>
-    </li>
-    <li class="list-item list-inside content-text">
-      <span>開發時程掌控</span>
     </li>`,
     },
     'jcolor': {

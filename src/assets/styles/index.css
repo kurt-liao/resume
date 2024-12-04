@@ -195,7 +195,7 @@ body {
   line-height: 2rem;
   font-weight: 700;
   color: #737373;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .content-text {
@@ -204,7 +204,7 @@ body {
   font-size: 1.25rem;
   line-height: 1.75rem;
   color: #a1a1aa;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .title-block {
@@ -221,7 +221,7 @@ body {
   border-left-width: 1rem;
   border-color: #c7d2fe;
   padding-left: .2rem;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .switch-holder {
